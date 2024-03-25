@@ -33,7 +33,7 @@
   </header>
 
   <main class="main-container">
-    <form class="form">
+    <form class="form" action="https://echo.htmlacademy.ru">
       <div class="form__wrapper">
         <h1 class="form__title">Подбор программы</h1>
         <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
@@ -54,20 +54,20 @@
           </ul>
         </div>
         <div class="form__food">
-          <ul class="food__list">
-            <li class="food__item radio-block">
+          <ul class="form__list">
+            <li class="form__item radio-block">
               <label class="radio-block__control">
               <input class="radio-block__input visually-hidden" type="radio" name="food__program" value="slimming">
               <span class="radio-block__label">Похудение</span>
             </label>
             </li>
-            <li class="food__item radio-block">
+            <li class="form__item radio-block">
               <label class="radio-block__control">
               <input class="radio-block__input visually-hidden" type="radio" name="food__program" value="weight">
               <span class="radio-block__label">Набор массы</span>
             </label>
             </li>
-            <li class="food__item radio-block">
+            <li class="form__item radio-block">
               <label class="radio-block__control">
               <input class="radio-block__input visually-hidden" type="radio" name="food__program" value="unknown">
               <span class="radio-block__label">Не знаю (нужен ваш совет)</span>
@@ -81,12 +81,12 @@
     <section class="contacts">
       <div class="contacts__wrapper">
         <h2 class="contacts__title">Контактные данные (владельца кота)</h2>
-        <ul class="email__list">
-          <li class="email__item input-block">
+        <ul class="contacts__list">
+          <li class="contacts__item input-block">
             <label class="input-block__label" for="form__email">E-mail:*</label>
             <input class="input-block__field" type="email" id="form__email" name="form__email" placeholder="Kuklachev@gmail.com">
           </li>
-          <li class="email__item input-block">
+          <li class="contacts__item input-block">
             <label class="input-block__label" for="form__phone">Телефон:*</label>
             <input class="input-block__field" type="tel" id="form__phone" name="form__phone" placeholder="8 (960) 900-60-90">
           </li>
@@ -96,7 +96,7 @@
 
     <section class="comment">
       <div class="comment__wrapper">
-        <h2 class="comment_title">Комментарий</h2>
+        <h2 class="comment__title">Комментарий</h2>
         <label class="visually-hidden" for="comment__message"></label>
         <textarea class="comment__message--field field" id="comment-message" name="commment-message" placeholder="Расскажите обо всех повадках кота" required></textarea>
       </div>
@@ -104,30 +104,30 @@
 
     <section class="additionally">
       <div class="additionally__wrapper">
-        <h2 class="additionally_title">Дополнительно</h2>
-        <ul class="catalog-filter-list">
-          <li class="catalog-filter-item">
-            <label class="control">
-            <input class="control__input visually-hidden" type="checkbox" name="sweetener" checked>
-            <span class="control__label">Сахарозаменитель</span>
+        <h2 class="additionally__title">Дополнительно</h2>
+        <ul class="additionally__list">
+          <li class="additionally__item checkbox-block">
+            <label class="checkbox-block__control">
+            <input class="checkbox-block__input visually-hidden" type="checkbox" name="sweetener" checked>
+            <span class="checkbox-block__label">Сахарозаменитель</span>
             </label>
           </li>
-          <li class="catalog-filter-item">
-            <label class="control">
-            <input class="control__input visually-hidden" type="checkbox" name="water">
-            <span class="control__label">Питьевая вода</span>
+          <li class="additionally__item checkbox-block">
+            <label class="checkbox-block__control">
+            <input class="checkbox-block__input visually-hidden" type="checkbox" name="water">
+            <span class="checkbox-block__label">Питьевая вода</span>
             </label>
           </li>
-          <li class="catalog-filter-item">
-            <label class="control">
-            <input class="control__input visually-hidden" type="checkbox" name="milk">
-            <span class="control__label">Молоко</span>
+          <li class="additionally__item checkbox-block">
+            <label class="checkbox-block__control">
+            <input class="checkbox-block__input visually-hidden" type="checkbox" name="milk">
+            <span class="checkbox-block__label">Молоко</span>
             </label>
           </li>
-          <li class="catalog-filter-item">
-            <label class="control">
-            <input class="control__input visually-hidden" type="checkbox" name="vitamins">
-            <span class="control__label">Витамины</span>
+          <li class="additionally__item checkbox-block">
+            <label class="checkbox-block__control">
+            <input class="checkbox-block__input visually-hidden" type="checkbox" name="vitamins">
+            <span class="checkbox-block__label">Витамины</span>
             </label>
           </li>
         </ul>
