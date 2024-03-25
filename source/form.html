@@ -7,14 +7,13 @@
 <body class="page__body">
   <header class="main-header">
     <a class="logo" href="#">
-      <img class="logo-image" src="img/logo.svg" width="202" height="59"
-      alt="Логотип «Кэт Энерджи»">
+      <img class="logo__image" src="img/logo.svg" width="202" height="59" alt="Логотип «Кэт Энерджи»">
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
+          <li class="site-list__item">
             <a>
               Главная
             </a>
@@ -24,7 +23,7 @@
               Каталог продукции
             </a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item--current">
             <a href="#">
               Подбор программы
             </a>
@@ -34,62 +33,64 @@
   </header>
 
   <main class="main-container">
-    <section class="form">
+    <form class="form">
       <div class="form__wrapper">
         <h1 class="form__title">Подбор программы</h1>
         <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
         <div class="form__profile">
-          <ul class="form__list--profile">
-            <li class="form__item">
-              <label class="form__label" for="form__phone">Имя:*</label>
-              <input class="field" id="form__phone" name="form__phone" placeholder="Барсик">
+          <ul class="form__list">
+            <li class="form__item input-block">
+              <label class="input-block__label" for="form__phone">Имя:*</label>
+              <input class="input-block__field" id="form__phone" name="form__phone" placeholder="Барсик">
             </li>
-            <li class="form__item">
-              <label class="form__label" for="form__weight">Вес (кг):*</label>
-              <input class="field" id="form__weight" name="form__weight" placeholder="7">
+            <li class="form__item input-block">
+              <label class="input-block__label" for="form__weight">Вес (кг):*</label>
+              <input class="input-block__field" id="form__weight" name="form__weight" placeholder="7">
             </li>
-            <li class="form__item">
-              <label class="form__label" for="form__age">Возраст (лет):*</label>
-              <input class="field" id="form__age" name="form__age" placeholder="7">
+            <li class="form__item input-block">
+              <label class="input-block__label" for="form__age">Возраст (лет):*</label>
+              <input class="input-block__field" id="form__age" name="form__age" placeholder="7">
             </li>
           </ul>
-          <div class="form__food">
-            <ul class="food__list--food">
-              <li class="food__item">
-                <label class="control">
-                <input class="control__input visually-hidden" type="radio" name="food__program" value="slimming">
-                <span class="control__label">Похудение</span>
-              </label>
-              </li>
-              <li class="food__item">
-                <label class="control">
-                <input class="control__input visually-hidden" type="radio" name="food__program" value="weight">
-                <span class="control__label">Набор массы</span>
-              </label>
-              </li>
-              <li class="food__item">
-                <label class="control">
-                <input class="control__input visually-hidden" type="radio" name="food__program" value="unknown">
-                <span class="control__label">Не знаю (нужен ваш совет)</span>
-              </label>
-              </li>
-            </ul>
-          </div>
+        </div>
+        <div class="form__food">
+          <ul class="food__list">
+            <li class="food__item radio-block">
+              <label class="radio-block__control">
+              <input class="radio-block__input visually-hidden" type="radio" name="food__program" value="slimming">
+              <span class="radio-block__label">Похудение</span>
+            </label>
+            </li>
+            <li class="food__item radio-block">
+              <label class="radio-block__control">
+              <input class="radio-block__input visually-hidden" type="radio" name="food__program" value="weight">
+              <span class="radio-block__label">Набор массы</span>
+            </label>
+            </li>
+            <li class="food__item radio-block">
+              <label class="radio-block__control">
+              <input class="radio-block__input visually-hidden" type="radio" name="food__program" value="unknown">
+              <span class="radio-block__label">Не знаю (нужен ваш совет)</span>
+            </label>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
+    </form>
 
     <section class="contacts">
       <div class="contacts__wrapper">
         <h2 class="contacts__title">Контактные данные (владельца кота)</h2>
-        <p class="contacts__email">
-          <label class="form__label" for="form__email">E-mail:*</label>
-          <input class="field" type="email" id="form__email" name="form__email" placeholder="Kuklachev@gmail.com">
-        </p>
-        <p class="contacts__phone">
-          <label class="form__label" for="form__phone">Телефон:*</label>
-          <input class="field" type="tel" id="form__phone" name="form__phone" placeholder="8 (960) 900-60-90">
-        </p>
+        <ul class="email__list">
+          <li class="email__item input-block">
+            <label class="input-block__label" for="form__email">E-mail:*</label>
+            <input class="input-block__field" type="email" id="form__email" name="form__email" placeholder="Kuklachev@gmail.com">
+          </li>
+          <li class="email__item input-block">
+            <label class="input-block__label" for="form__phone">Телефон:*</label>
+            <input class="input-block__field" type="tel" id="form__phone" name="form__phone" placeholder="8 (960) 900-60-90">
+          </li>
+        </ul>
       </div>
     </section>
 
