@@ -1,1 +1,72 @@
-@import "/source/less/blocks/main-header.less";
+@import "./blocks/main-header.less";
+
+@import "./blocks/main-nav.less";
+
+@import "./blocks/program.less";
+
+@import "./blocks/food.less";
+
+@import "./blocks/work.less";
+
+@import "./blocks/example.less";
+
+@import "./blocks/map.less";
+
+@import "./blocks/main-footer.less";
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lato/Lato-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/oswald/oswaldregular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/oswald/oswaldmedium.woff2") format("woff2");
+  font-display: swap;
+}
+
+*,*::before,*::after{box-sizing: border-box;}
+
+html {
+  height: 100%;
+}
+
+body {
+  width: 1440px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
