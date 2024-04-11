@@ -1,49 +1,142 @@
 .example {
   position: relative;
+  background-color: #F2F2F2;
 }
 
 .example__title {
   font-family: Oswald;
-  font-size: 60px;
+  font-size: 36px;
   font-weight: 400;
-  line-height: 60px;
-  margin: 0 0 76px 110px;
+  line-height: 40px;
+  margin: 0;
+  padding: 0;
+  padding: 25px 0 0 20px;
 }
 
 .example__wrapper {
-  display: flex;
   background-color: #F2F2F2;
 }
 
 .example__sample {
-  margin: 70px 224px 54px 110px;
+  margin: 40px 20px 0 20px;
 }
 
 .example__description {
   margin: 0;
   padding: 0;
-  width: 436px;
-  min-height: 96px;
+  width: 280px;
+  min-height: 108px;
   font-family: Lato;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 24px;
-  margin-bottom: 69px;
+  line-height: 18px;
+  margin-bottom: 20px;
 }
 
 .example__tables {
   display: flex;
-  margin-bottom: 23px;
+  margin-bottom: 20px;
 }
 
 .example__result {
-  width: 162px;
-  min-height: 72px;
-  gap: 0px;
-  border: 1px 0px 0px 0px;
-  opacity: 0px;
+  width: 124px;
+  min-height: 56px;
   border: 1px solid #CDCDCD;
-  &--title {
+}
+
+.example__value {
+  margin: 0;
+  padding: 0;
+  font-family: Oswald;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin: 15px 0 18px 0;
+}
+
+.example__expenses {
+  font-family: Lato;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.example__costs {
+  display: flex;
+  justify-content: center;
+}
+
+.example__price {
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.example__food {
+  font-family: Oswald;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+@media (min-width: @desktop-width) {
+
+  .example {
+    position: relative;
+  }
+
+  .example__title {
+    font-family: Oswald;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    margin: 0 0 76px 110px;
+  }
+
+  .example__wrapper {
+    display: flex;
+    background-color: #F2F2F2;
+  }
+
+  .example__sample {
+    margin: 70px 224px 54px 110px;
+  }
+
+  .example__description {
+    margin: 0;
+    padding: 0;
+    width: 436px;
+    min-height: 96px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 69px;
+  }
+
+  .example__tables {
+    display: flex;
+    margin-bottom: 23px;
+  }
+
+  .example__result {
+    width: 162px;
+    min-height: 72px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #CDCDCD;
+  }
+
+  .example__value {
     margin: 0;
     padding: 0;
     font-family: Oswald;
@@ -53,18 +146,29 @@
     text-align: center;
     margin: 15px 0 11px 0;
   }
-  &--description {
+
+  .example__expenses {
     font-family: Lato;
     font-size: 14px;
     font-weight: 400;
     line-height: 14px;
     text-align: center;
   }
-}
 
-.example__costs {
-  display: flex;
-  &--food {
+  .example__costs {
+    display: flex;
+  }
+
+  .example__price {
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .example__food {
     font-family: Oswald;
     font-size: 20px;
     font-weight: 400;
@@ -72,18 +176,11 @@
     margin-right: 63px;
     text-transform: uppercase;
   }
-  &--price {
-    font-family: Oswald;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 20px;
-    text-align: center;
-    text-transform: uppercase;
-  }
-}
 
-.example__image {
-  position: absolute;
-  right: 110px;
-  top: 0;
+  .example__image {
+    position: absolute;
+    right: 110px;
+    top: 0;
+  }
+
 }

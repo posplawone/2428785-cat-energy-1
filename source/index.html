@@ -8,50 +8,49 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__link" href="index.html">
-      <img class="main-header__link--logo" src="img/logo.svg" width="202" height="59"
+      <img class="main-header__logo" src="img/logo.svg" width="202" height="59"
       alt="Логотип «Кэт Энерджи»">
     </a>
     <nav class="main-header__navigation">
-      <button class="main-header__toggle visually-hidden" type="button"><span>Открыть меню</span></button>
-      <div class="main-header__wrapper">
-        <ul class="main-header__list">
-          <li class="main-header__item main-header__item--current">
-            <a class="main-header__link" href="#">
-              Главная
-            </a>
-          </li>
-          <li class="main-header__item">
-            <a class="main-header__link" href="catalog.html">
-              Каталог продукции
-            </a>
-          </li>
-          <li class="main-header__item">
-            <a class="main-header__link" href="form.html">
-              Подбор программы
-            </a>
-          </li>
-        </ul>
+      <button class="main-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+        <img class="main-header__image" src="img/header-toogle.svg" width="24" height="24">
+      </button>
+      <ul class="main-header__list">
+        <li class="main-header__item main-header__item--current">
+          <a class="main-header__link" href="#">
+            Главная
+          </a>
+        </li>
+        <li class="main-header__item">
+          <a class="main-header__link" href="catalog.html">
+            Каталог продукции
+          </a>
+        </li>
+        <li class="main-header__item">
+          <a class="main-header__link" href="form.html">
+            Подбор программы
+          </a>
+        </li>
+      </ul>
     </nav>
   </header>
 
   <main class="main-container">
-
-    <h1 class="visually-hidden">Кэт Энерджи - функциональное питание для котов.</h1>
-
     <section class="program">
       <div class="program__wrapper">
         <header class="program__header">
-          <h2 class="program__title">
+          <h1 class="program__title">
             Функциональное питание&nbsp;для&nbsp;котов
-          </h2>
+          </h1>
           <p class="program__slogan">
             Занялся собой? Займись котом!
           </p>
-          <a class="program__toggle" href="#">
-            Подобрать программу
-          </a>
         </header>
-        <img class="program__image" src="img/program-image.png" width="552" height="499" alt="Упаковка корма cо вкусом курицы">
+        <img class="program__image" src="img/program-image.png" width="280" height="270" alt="Упаковка корма cо вкусом курицы">
+        <a class="program__toggle" href="#">
+          Подобрать программу
+        </a>
       </div>
     </section>
 
@@ -61,9 +60,9 @@
           Программы питания, которые подойдут Вашему питомцу.
         </h2>
         <ul class="food__list">
-          <li class="food__item food__item--slimming">
+          <li class="food__item">
             <h3 class="food__title">
-              <img class="food__image" src="img/food-slimming.svg" width="100" height="106" alt="Иконка стройной кошки">
+              <img class="food__image-slimming" src="img/food-slimming.svg" width="100" height="106" alt="Иконка стройной кошки">
               Похудение
             </h3>
             <p class="food__description">
@@ -74,9 +73,9 @@
               <img class="food__link" src="img/food-black-arrow.svg" width="24" height="12">
             </a>
           </li>
-          <li class="food__item food__item--weight">
+          <li class="food__item">
             <h3 class="food__title">
-              <img class="food__image" src="img/food-weight.svg" width="134" height="100" alt="Иконка мускулистой кошки">
+              <img class="food__image-weight" src="img/food-weight.svg" width="134" height="100" alt="Иконка мускулистой кошки">
               Набор массы
             </h3>
             <p class="food__description">
@@ -139,24 +138,24 @@
           </p>
           <div class="example__tables">
             <div class="example__result">
-              <p class="example__result--title">5 кг</p>
-              <span class="example__result--description">снижение веса</span>
+              <p class="example__value">5 кг</p>
+              <span class="example__expenses">снижение веса</span>
             </div>
             <div class="example__result">
-              <p class="example__result--title">60 дней</p>
-              <span class="example__result--description">затрачено времени</span>
+              <p class="example__value">60 дней</p>
+              <span class="example__expenses">затрачено времени</span>
             </div>
           </div>
           <div class="example__costs">
-            <p class="example__costs--food">
+            <p class="example__food">
               Затраты на питание:
             </p>
-            <p class="example__costs--price">
+            <p class="example__price">
               15 000 руб.
             </p>
           </div>
         </div>
-        <img class="example__image" src="img/example-cat.png" width="560" height="512" alt="">
+        <img class="example__image" src="img/example-cat.png" width="280" height="256" alt="">
       </div>
     </section>
 
@@ -167,14 +166,15 @@
             Приглашаем к&nbsp;сотрудничеству дилеров!
           </p>
           <div class="map__description">
-            <p class="map__description--address">
+            <p class="map__address">
               ул. Большая Конюшенная,д.&nbsp;19/8
             </p>
-            <span class="map__description--city">
+            <span class="map__city">
               Санкт-Петербург
             </span>
           </div>
         </address>
+        <img class="map__image" src="img/map-mobile.jpg" width="320" height="362" alt="">
       </div>
     </section>
   </main>
@@ -207,7 +207,10 @@
       </div>
       <div class="main-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru">
-          <img class="copyright__image" src="img/html-academy.svg" width="168" height="37">
+          HTML Academy
+        </a>
+        <a class="copyright__link-image" href="https://htmlacademy.ru">
+          <img class="copyright__image" src="img/copyright.svg" width="27" height="34">
         </a>
       </div>
     </div>
