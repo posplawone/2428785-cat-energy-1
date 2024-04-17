@@ -1,34 +1,160 @@
 .extra__wrapper {
-  margin: 0 110px 87px 110px;
+  margin: 0 20px 35px 20px;
 }
 
 .extra__title {
   font-family: Oswald;
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 400;
-  line-height: 36px;
+  line-height: 24px;
   margin: 0;
   padding: 0;
-  margin-bottom: 80px;
-}
-
-.extra__table {
-  display: flex;
+  margin-bottom: 49px;
 }
 
 .extra__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 896px;
 }
 
 .extra__item {
-  display: grid;
-  grid-template-columns: 326px 243px 82px 245px;
-  min-height: 40px;
-  margin-bottom: 40px;
-  &--name {
+  margin-bottom: 31px;
+}
+
+.extra__name {
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 13px;
+}
+
+.extra__card {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.extra__amount {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.extra__price {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.extra__button {
+  display: block;
+  text-decoration: none;
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  padding: 10px 0px 10px 0px;
+  background: #68B738;
+  width: 280px;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.extra__item:last-child {
+  margin-bottom: 54px;
+}
+
+.extra__gift {
+  position: relative;
+  width: 280px;
+  min-height: 290px;
+  background-image: url(../img/extra-gift.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -2;
+}
+
+.extra__gift::before {
+  position: absolute;
+  content: "";
+  width: 280px;
+  min-height: 290px;
+  background: #68B738D9;
+  opacity: 85%;
+  z-index: -1;
+}
+
+.extra__image {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.extra__description {
+  margin: 0 auto;
+  padding: 0;
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: #FFFFFF;
+  width: 161px;
+}
+
+@media (min-width: @tabletop-width) {
+
+  .extra__wrapper {
+    margin: 0 30px 75px 30px;
+  }
+
+  .extra__title {
+    font-family: Oswald;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 108px;
+  }
+
+  .extra__table {
+    display: block;
+  }
+
+  .extra__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 708px;
+  }
+
+  .extra__item {
+    display: block;
+    width: 632px;
+    min-height: 85px;
+    margin-bottom: 40px;
+  }
+
+  .extra__total {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .extra__name {
     font-family: Oswald;
     font-size: 20px;
     font-weight: 400;
@@ -37,7 +163,18 @@
     margin: 0;
     padding: 0;
   }
-  &--amount {
+
+  .extra__amount {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    margin-right: 49px;
+  }
+
+  .extra__price {
     font-family: Lato;
     font-size: 16px;
     font-weight: 400;
@@ -45,7 +182,117 @@
     margin: 0;
     padding: 0;
   }
-  &--price {
+
+  .extra__button {
+    width: 632px;
+    height: 40px;
+    top: 15px;
+    left: 651px;
+    padding: 10px 0px 10px 0px;
+    gap: 0px;
+    opacity: 0px;
+    text-decoration: none;
+    background: #68B738;
+    font-family: Oswald;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+  }
+
+  .extra__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .extra__gift {
+    position: relative;
+    width: 245px;
+    min-height: 288px;
+    background-image: url(../img/extra-gift.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    z-index: -2;
+  }
+
+  .extra__gift::before {
+    position: absolute;
+    content: "";
+    width: 245px;
+    min-height: 288px;
+    background: #68B738D9;
+    opacity: 85%;
+    z-index: -1;
+  }
+
+  .extra__image {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 56px;
+    margin-bottom: 46px;
+  }
+
+  .extra__description {
+    margin: 0 auto;
+    padding: 0;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 161px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+
+  .extra__wrapper {
+    margin: 0 110px 87px 110px;
+  }
+
+  .extra__title {
+    font-family: Oswald;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 80px;
+  }
+
+  .extra__table {
+    display: flex;
+  }
+
+  .extra__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 896px;
+  }
+
+  .extra__item {
+    display: grid;
+    grid-template-columns: 326px 325px 245px;
+    min-height: 40px;
+    margin-bottom: 40px;
+  }
+
+  .extra__name {
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+  }
+
+  .extra__amount {
     font-family: Lato;
     font-size: 16px;
     font-weight: 400;
@@ -53,7 +300,18 @@
     margin: 0;
     padding: 0;
   }
-  &--button {
+
+  .extra__price {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    margin-right: 40px;
+  }
+
+  .extra__button {
     width: 244px;
     height: 40px;
     top: 15px;
@@ -71,49 +329,49 @@
     color: #FFFFFF;
     text-transform: uppercase;
   }
-}
 
-.extra__item:last-child {
-  margin-bottom: 0;
-}
+  .extra__item:last-child {
+    margin-bottom: 0;
+  }
 
-.extra__gift {
-  position: relative;
-  width: 245px;
-  min-height: 288px;
-  background-image: url(../img/extra-gift.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-left: 80px;
-  z-index: -2;
-}
+  .extra__gift {
+    position: relative;
+    width: 245px;
+    min-height: 288px;
+    background-image: url(../img/extra-gift.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-left: 80px;
+    z-index: -2;
+  }
 
-.extra__gift::before {
-  position: absolute;
-  content: "";
-  width: 245px;
-  min-height: 288px;
-  background: #68B738D9;
-  opacity: 85%;
-  z-index: -1;
-}
+  .extra__gift::before {
+    position: absolute;
+    content: "";
+    width: 245px;
+    min-height: 288px;
+    background: #68B738D9;
+    opacity: 85%;
+    z-index: -1;
+  }
 
-.extra__image {
-  display: block;
-  margin: 0 auto;
-  padding: 0;
-  margin-top: 56px;
-  margin-bottom: 46px;
-}
+  .extra__image {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 56px;
+    margin-bottom: 46px;
+  }
 
-.extra__description {
-  margin: 0 auto;
-  padding: 0;
-  font-family: Lato;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: center;
-  color: #FFFFFF;
-  width: 161px;
+  .extra__description {
+    margin: 0 auto;
+    padding: 0;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 161px;
+  }
 }

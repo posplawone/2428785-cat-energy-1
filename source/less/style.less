@@ -55,6 +55,9 @@
   font-display: swap;
 }
 
+@desktop-width: 1440px;
+@tabletop-width: 768px;
+
 *,*::before,*::after{box-sizing: border-box;}
 
 html {
@@ -62,7 +65,7 @@ html {
 }
 
 body {
-  width: 1440px;
+  width: 320px;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -73,6 +76,18 @@ body {
   color: #000000;
   background-color: #ffffff;
   margin: 0 auto;
+}
+
+@media (min-width: @tabletop-width) {
+  body {
+    width: 768px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  body {
+    width: 1440px;
+  }
 }
 
 .visually-hidden {
