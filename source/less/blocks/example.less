@@ -87,6 +87,116 @@
   text-transform: uppercase;
 }
 
+@media (min-width: @tabletop-width) {
+
+  .example {
+    position: relative;
+  }
+
+  .example__title {
+    font-family: Oswald;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+    margin-left: 30px;
+    padding: 0;
+  }
+
+  .example__wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    margin: 0 30px;
+  }
+
+  .example__sample {
+    margin: 0;
+    margin-top: 60px;
+  }
+
+  .example__description {
+    margin: 0;
+    padding: 0;
+    width: 436px;
+    min-height: 96px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 55px;
+  }
+
+  .example__total {
+    display: flex;
+    gap: 167px;
+    align-items: center;
+  }
+
+  .example__tables {
+    display: flex;
+    margin-bottom: 23px;
+  }
+
+  .example__result {
+    width: 162px;
+    min-height: 72px;
+    gap: 0px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    border: 1px solid #CDCDCD;
+  }
+
+  .example__value {
+    margin: 0;
+    padding: 0;
+    font-family: Oswald;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 37px;
+    text-align: center;
+    margin: 15px 0 11px 0;
+  }
+
+  .example__expenses {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    text-align: center;
+  }
+
+  .example__costs {
+    display: block;
+  }
+
+  .example__price {
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: right;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+  }
+
+  .example__food {
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+  }
+
+  .example__image {
+    display: block;
+    margin: 0 auto;
+  }
+
+}
+
 @media (min-width: @desktop-width) {
 
   .example {
@@ -120,6 +230,10 @@
     font-weight: 400;
     line-height: 24px;
     margin-bottom: 69px;
+  }
+
+  .example__total {
+    display: block;
   }
 
   .example__tables {
@@ -157,6 +271,7 @@
 
   .example__costs {
     display: flex;
+    justify-content: left;
   }
 
   .example__price {

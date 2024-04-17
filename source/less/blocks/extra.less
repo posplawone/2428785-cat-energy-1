@@ -115,6 +115,139 @@
   width: 161px;
 }
 
+@media (min-width: @tabletop-width) {
+
+  .extra__wrapper {
+    margin: 0 30px 75px 30px;
+  }
+
+  .extra__title {
+    font-family: Oswald;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 108px;
+  }
+
+  .extra__table {
+    display: block;
+  }
+
+  .extra__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 708px;
+  }
+
+  .extra__item {
+    display: block;
+    width: 632px;
+    min-height: 85px;
+    margin-bottom: 40px;
+  }
+
+  .extra__total {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .extra__name {
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+  }
+
+  .extra__amount {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+    margin-right: 49px;
+  }
+
+  .extra__price {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .extra__button {
+    width: 632px;
+    height: 40px;
+    top: 15px;
+    left: 651px;
+    padding: 10px 0px 10px 0px;
+    gap: 0px;
+    opacity: 0px;
+    text-decoration: none;
+    background: #68B738;
+    font-family: Oswald;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+  }
+
+  .extra__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .extra__gift {
+    position: relative;
+    width: 245px;
+    min-height: 288px;
+    background-image: url(../img/extra-gift.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    z-index: -2;
+  }
+
+  .extra__gift::before {
+    position: absolute;
+    content: "";
+    width: 245px;
+    min-height: 288px;
+    background: #68B738D9;
+    opacity: 85%;
+    z-index: -1;
+  }
+
+  .extra__image {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 56px;
+    margin-bottom: 46px;
+  }
+
+  .extra__description {
+    margin: 0 auto;
+    padding: 0;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 161px;
+  }
+}
+
 @media (min-width: @desktop-width) {
 
   .extra__wrapper {
