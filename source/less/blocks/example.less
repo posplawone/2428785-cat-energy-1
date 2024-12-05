@@ -87,6 +87,39 @@
   text-transform: uppercase;
 }
 
+.example__slider {
+  position: relative;
+  left: 770px;
+  right: 110px;
+  top: 0;
+  width: 560px;
+  height: 512px;
+}
+
+.example__button {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 11px 8px 11px 8px;
+  border-radius: 20px;
+  border: 2px solid #666666;
+  background: #FFFFFF;
+}
+
+.example__button::before {
+  position: absolute;
+  content: "";
+  width: 4px;
+  height: 512px;
+  gap: 0px;
+  border-radius: 2px;
+  opacity: 0px;
+  background: #666666;
+}
+
 @media (min-width: @tabletop-width) {
 
   .example {
@@ -190,10 +223,38 @@
     padding: 0;
   }
 
-  .example__image {
-    display: block;
-    margin: 0 auto;
+  .example__slider {
+    position: relative;
+    left: 770px;
+    right: 110px;
+    top: 0;
+    width: 560px;
+    height: 512px;
   }
+
+  .example__button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 11px 8px 11px 8px;
+    border-radius: 20px;
+    border: 2px solid #666666;
+    background: #FFFFFF;
+  }
+
+  .example__button::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 512px;
+    gap: 0px;
+    border-radius: 2px;
+    opacity: 0px;
+    background: #666666;
+}
 
 }
 
@@ -292,10 +353,35 @@
     text-transform: uppercase;
   }
 
-  .example__image {
-    position: absolute;
+  .example__slider {
+    position: relative;
+    left: 770px;
     right: 110px;
     top: 0;
+    width: 560px;
+    height: 512px;
   }
 
+  .example__button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 11px 8px 11px 8px;
+    border-radius: 20px;
+    border: 2px solid #666666;
+    background: #FFFFFF;
+  }
+
+  .example__button::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 512px;
+    gap: 0px;
+    border-radius: 2px;
+    opacity: 0px;
+    background: #666666;
 }
