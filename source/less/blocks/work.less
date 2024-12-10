@@ -133,6 +133,7 @@
   }
 
   .work__item {
+    position: relative;
     flex-direction: column;
     counter-increment: workCounter;
     width: 230px;
@@ -152,17 +153,17 @@
   }
 
   .work__item::before {
+    position: absolute;
     content: counter(workCounter);
     width: 134px;
     height: 280px;
-    font-family: Oswald;
     font-size: 280px;
     font-weight: 400;
     line-height: 280px;
     text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    background: #F2F2F2;
+    color: #F2F2F2;
+    z-index: -1;
+    left: 50%;
   }
 
   .work__image {
