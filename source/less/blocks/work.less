@@ -15,13 +15,19 @@
   list-style-type: none;
   padding: 0;
   margin: 0;
+  counter-reset: workCoutner;
 }
 
 .work__item {
   display: flex;
+  counter-increment: workCounter;
   width: 280px;
   min-height: 60px;
   margin-bottom: 20px;
+}
+
+.work__item::before {
+  content: counter(workCounter);
 }
 
 .work__item:last-child {
@@ -30,10 +36,6 @@
 
 .work__image {
   margin-right: 20px;
-}
-
-.work__number {
-  display: none;
 }
 
 .work__description {
@@ -63,6 +65,7 @@
   .work__list {
     display: grid;
     grid-template-columns: 346px 230px;
+    counter-reset: workCounter;
     list-style-type: none;
     padding: 0;
     gap: 37px;
@@ -71,48 +74,25 @@
 
   .work__item {
     flex-direction: column;
+    counter-increment: workCounter;
     width: 230px;
     min-height: 280px;
     &--sheet {
       position: relative;
-      .work__number {
-        display: block;
-        position: absolute;
-        top: 40px;
-        right: 35px;
-        z-index: -1;
-      }
     }
     &--powder {
       position: relative;
-      .work__number {
-        display: block;
-        position: absolute;
-        top: 40px;
-        right: 0;
-        z-index: -1;
-      }
     }
     &--reception {
       position: relative;
-      .work__number {
-        display: block;
-        position: absolute;
-        top: 40px;
-        right: 0;
-        z-index: -1;
-      }
     }
     &--time {
       position: relative;
-      .work__number {
-        display: block;
-        position: absolute;
-        top: 40px;
-        right: 0;
-        z-index: -1;
-      }
     }
+  }
+
+  .work__item::before {
+    content: counter(workCounter);
   }
 
   .work__image {
@@ -145,6 +125,7 @@
 
   .work__list {
     display: flex;
+    counter-reset: workCounter;
     list-style-type: none;
     padding: 0;
     gap: 94px;
@@ -152,49 +133,37 @@
   }
 
   .work__item {
+    position: relative;
     flex-direction: column;
+    counter-increment: workCounter;
     width: 230px;
     min-height: 280px;
     &--sheet {
       position: relative;
-      .work__number {
-        display: block;
-        position: absolute;
-        top: 40px;
-        right: 35px;
-        z-index: -1;
-      }
     }
     &--powder {
       position: relative;
-      .work__number {
-        display: block;
-        position: absolute;
-        top: 40px;
-        right: 0;
-        z-index: -1;
-      }
     }
     &--reception {
       position: relative;
-      .work__number {
-        display: block;
-        position: absolute;
-        top: 40px;
-        right: 0;
-        z-index: -1;
-      }
     }
     &--time {
       position: relative;
-      .work__number {
-        display: block;
-        position: absolute;
-        top: 40px;
-        right: 0;
-        z-index: -1;
-      }
     }
+  }
+
+  .work__item::before {
+    position: absolute;
+    content: counter(workCounter);
+    width: 134px;
+    height: 280px;
+    font-size: 280px;
+    font-weight: 400;
+    line-height: 280px;
+    text-align: center;
+    color: #F2F2F2;
+    z-index: -1;
+    left: 50%;
   }
 
   .work__image {

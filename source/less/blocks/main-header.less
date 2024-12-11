@@ -1,6 +1,6 @@
 .main-header {
     display: flex;
-    margin: 14px 20px;
+    position: relative;
     justify-content: space-between;
   }
 
@@ -12,6 +12,43 @@
 
   .main-header__list {
     display: none;
+  }
+
+  .main-header__menu-close {
+    display: none;
+  }
+
+  .main-header__menu {
+    position: absolute;
+    top: 63px;
+    z-index: 1;
+    width: 320px;
+    background: #FCFCFC;
+  }
+
+  .main-header__menu-content {
+    height: 100%;
+  }
+
+  .main-header__menu-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .main-header__menu-item {
+    padding: 22px 75px 24px 75px;
+  }
+
+  .main-header__menu-link {
+    font-family: Oswald;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
   }
 
 @media (min-width: @tabletop-width) {
