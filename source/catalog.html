@@ -9,8 +9,11 @@
 <body class="page__body">
   <header class="site-header">
     <a class="site-header__link" href="index.html">
-      <img class="site-header__image" src="img/logo.svg" width="202" height="59"
-      alt="Логотип «Кэт Энерджи»">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="main-header__logo" src="img/logo-mobile.svg" alt="Логотип «Кэт Энерджи»">
+      </picture>
     </a>
     <nav class="site-header__navigation">
       <button class="main-header__toggle" type="button">
@@ -47,7 +50,10 @@
               <li class="products__item product">
                 <div class="product__card">
                   <a class="product__link" href="#">
-                    <img class="product__image" src="img/little-chicken.png" width="161" height="172" alt="Маленький корм cо вкусом курицы">
+                    <picture>
+                      <source media="(min-width: 768px)" srcset="img/little-chicken-tablet.png 1x, img/little-chicken-tablet@2x.png 2x">
+                      <img class="product__image" src="img/little-chicken-mobile.png" srcset="img/little-chicken-mobile@2x.png 2x" alt="Маленький корм cо вкусом курицы">
+                    </picture>
                   </a>
                   <ul class="product__description">
                     <li class="product__item">
@@ -88,7 +94,10 @@
           <li class="products__item product">
             <div class="product__card">
               <a class="product__link" href="#">
-                <img class="product__image" src="img/big-chicken.png" width="172" height="196" alt="Большой корм со вкусом курицы">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/big-chicken-tablet.png 1x, img/big-chicken-tablet@2x.png 2x">
+                  <img class="product__image" src="img/big-chicken-mobile.png" srcset="img/big-chicken-mobile@2x.png 2x" alt="Большой корм со вкусом курицы">
+                </picture>
               </a>
               <ul class="product__description">
                 <li class="product__item">
@@ -129,7 +138,10 @@
           <li class="products__item product">
             <div class="product__card">
               <a class="product__link" href="#">
-                <img class="product__image" src="img/little-fish.png" width="163" height="174" alt="Маленький корм со вкусом рыбы">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/little-fish-tablet.png 1x, img/little-fish-tablet@2x.png 2x">
+                  <img class="product__image" src="img/little-fish-mobile.png" srcset="img/little-fish-mobile@2x.png 2x" alt="Маленький корм со вкусом рыбы">
+                </picture>
               </a>
               <ul class="product__description">
                 <li class="product__item">
@@ -170,7 +182,10 @@
           <li class="products__item product">
             <div class="product__card">
               <a class="product__link" href="#">
-                <img class="product__image" src="img/little-fish.png" width="172" height="196" alt="Большой корм со вкусом рыбы">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/big-fish-tablet.png 1x, img/big-fish-tablet@2x.png 2x">
+                  <img class="product__image" src="img/big-fish-mobile.png" srcset="img/big-fish-mobile@2x.png 2x" alt="Большой корм со вкусом рыбы">
+                </picture>
               </a>
               <ul class="product__description">
                 <li class="product__item">
@@ -211,7 +226,10 @@
           <li class="products__item product">
             <div class="product__card">
               <a class="product__link" href="#">
-                <img class="product__image" src="img/little-buckwheat.png" width="161" height="171" alt="Маленький корм со вкусом гречки">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/little-buckwheat-tablet.png 1x, img/little-buckwheat-tablet@2x.png 2x">
+                  <img class="product__image" src="img/little-buckwheat-mobile.png" srcset="img/little-buckwheat-mobile@2x.png 2x" alt="Маленький корм со вкусом гречки">
+                </picture>
               </a>
               <ul class="product__description">
                 <li class="product__item">
@@ -252,7 +270,10 @@
           <li class="products__item product">
             <div class="product__card">
               <a class="product__link" href="#">
-                <img class="product__image" src="img/big-buckwheat.png" width="172" height="196" alt="Большой корм со вкусом гречки">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/big-buckwheat-tablet.png 1x, img/big-buckwheat-tablet@2x.png 2x">
+                  <img class="product__image" src="img/big-buckwheat-mobile.png" srcset="img/big-buckwheat-mobile@2x.png 2x" alt="Большой корм со вкусом гречки">
+                </picture>
               </a>
               <ul class="product__description">
                 <li class="product__item">
@@ -293,7 +314,10 @@
           <li class="products__item product">
             <div class="product__card">
               <a class="product__link" href="#">
-                <img class="product__image" src="img/little-rice.png" width="163" height="174" alt="Маленький корм со вкусом риса">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/little-rice-tablet.png 1x, img/little-rice-tablet@2x.png 2x">
+                  <img class="product__image" src="img/little-rice-mobile.png" srcset="img/little-rice-mobile@2x.png 2x" alt="Маленький корм со вкусом риса">
+                </picture>
               </a>
               <ul class="product__description">
                 <li class="product__item">
@@ -451,7 +475,7 @@
             </span>
           </div>
         </address>
-        <img class="map__image" src="img/map-mobile.jpg" width="320" height="362" alt="">
+        <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603625719817!2d30.32047247732077!3d59.938719162093584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1733820038769!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </section>
   </main>
@@ -487,7 +511,10 @@
           HTML Academy
         </a>
         <a class="copyright__link-image" href="https://htmlacademy.ru">
-          <img class="copyright__image" src="img/copyright.svg" width="27" height="34">
+          <picture>
+            <source media="(min-width: 768px)" srcset="img/copyright-tablet.svg">
+            <img class="copyright__image" src="img/copyright-mobile.svg">
+          </picture>
         </a>
       </div>
     </div>
