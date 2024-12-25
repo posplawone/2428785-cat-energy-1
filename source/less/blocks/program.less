@@ -44,6 +44,14 @@
   color: #FFFFFF;
 }
 
+.program__image-cat {
+  position: absolute;
+  width: 320px;
+  height: 302px;
+  z-index: -2;
+  top: 0;
+}
+
 .program__toggle {
   padding: 10px 44px 10px 44px;
   background-color: #68B738;
@@ -94,7 +102,11 @@
     color: #000000;
   }
 
-  .program__image {
+  .program__image-cat {
+    display: none;
+  }
+
+  .program__image-package {
     position: absolute;
     width: 709px;
     height: 609px;
@@ -161,7 +173,17 @@
     color: #000000;
   }
 
-  .program__image {
+  .program__image-cat {
+    position: absolute;
+    display: block;
+    width: 720px;
+    height: 694px;
+    z-index: -2;
+    right: 0;
+    top: -235px;
+  }
+
+  .program__image-package {
     position: absolute;
     width: 552px;
     height: 499px;
