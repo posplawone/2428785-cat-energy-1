@@ -111,6 +111,7 @@
   background: #FFFFFF;
   top: 111px;
   right: 120px;
+  cursor: pointer;
 }
 
 .example__button::before {
@@ -138,6 +139,22 @@
   z-index: 1;
   position: absolute;
   fill: #666;
+}
+
+.example__button:hover {
+  color: #68B738;
+
+  &::before {
+    border-color: currentColor;
+  }
+
+  &::after {
+    background-color: currentColor;
+  }
+
+  & .example__button--vector {
+    fill: currentColor;
+  }
 }
 
 @media (min-width: @tabletop-width) {
