@@ -8,10 +8,12 @@ import htmlmin from 'gulp-htmlmin';
 import sharpOptimizeImages from 'gulp-sharp-optimize-images';
 import svgo from 'gulp-svgo';
 import rename from 'gulp-rename';
+import svgstore from 'gulp-svgstore';
+import {deleteAsync} from 'del';
 
 // Styles
 
-export const styles = () => {
+const styles = () => {
   return gulp.src('source/less/style.less', { sourcemaps: true })
     .pipe(plumber())
     .pipe(less())
@@ -23,7 +25,7 @@ export const styles = () => {
 }
 
 // HTML
-export const html = () => {
+const html = () => {
   return gulp.src('source/*.html')
     .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest('build'));
@@ -63,7 +65,7 @@ const svg = () => {
     .pipe(gulp.dest('build/img'));
 }
 
-export const sprite = () => {
+const sprite = () => {
   return gulp.src('source/img/*.svg')
     .pipe(svgo())
     .pipe(svgstore({
@@ -71,6 +73,25 @@ export const sprite = () => {
     }))
     .pipe(rename('sprite.svg'))
     .pipe(gulp.dest('build/img'));
+}
+
+// Copy
+
+const copy = (done) => {
+  gulp.src([
+    'source/fonts/**/*.{woff2,woff}',
+    'source/*.ico',
+  ], {
+      base: 'source'
+    })
+    .pipe(gulp.dest('build'))
+    done();
+}
+
+// Clean
+
+const clean = () => {
+  return deleteAsync('build');
 }
 
 // Server
@@ -94,7 +115,36 @@ const watcher = () => {
   gulp.watch('source/*.html').on('change', browser.reload);
 }
 
+// Default
 
 export default gulp.series(
-  svg, copyImages, optimizeImages, html, styles, server, watcher,
+  clean,
+  copy,
+  copyImages,
+  gulp.parallel(
+    html,
+    styles,
+    svg,
+    sprite
+  ),
+  gulp.series(
+    server,
+    watcher
+  ));
+
+// Build
+
+export const build = gulp.series(
+  clean,
+  copy,
+  optimizeImages,
+  gulp.parallel(
+    html,
+    styles,
+    server,
+    watcher,
+    svg,
+    sprite
+  ),
+  server
 );
