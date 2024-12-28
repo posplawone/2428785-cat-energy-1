@@ -4,6 +4,8 @@ import less from 'gulp-less';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
 import browser from 'browser-sync';
+import htmlmin from 'gulp-htmlmin';
+import gulpSquoosh from 'gulp-squoosh';
 
 // Styles
 
@@ -14,8 +16,22 @@ export const styles = () => {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
+}
+
+// HTML
+export const html = () => {
+  return gulp.src('source/*.html')
+    .pipe(htmlmin({ collapseWhitespace: true }))
+    .pipe(gulp.dest('build'));
+}
+
+// Images
+export const images = () => {
+  return gulp.src('source/img/*.{jpg,png}')
+    .pipe(gulpSquoosh())
+    .pipe(gulp.dest('build/img'));
 }
 
 // Server
@@ -23,7 +39,7 @@ export const styles = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'source'
+      baseDir: 'build'
     },
     cors: true,
     notify: false,
@@ -41,5 +57,5 @@ const watcher = () => {
 
 
 export default gulp.series(
-  styles, server, watcher
+  images, html, styles, server, watcher,
 );
