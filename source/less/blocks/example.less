@@ -157,6 +157,23 @@
   }
 }
 
+.example__button:active {
+  color: #68B738;
+  opacity: 60%;
+
+  &::before {
+    border-color: currentColor;
+  }
+
+  &::after {
+    background-color: currentColor;
+  }
+
+  & .example__button--vector {
+    fill: currentColor;
+  }
+}
+
 @media (min-width: @tabletop-width) {
 
   .example {
@@ -324,11 +341,18 @@
     }
 
     .example__title {
+      background-color: #FFFFFF;
+      height: 136px;
+      margin: 0;
+    }
+
+    .example__heading {
       font-family: Oswald;
       font-size: 60px;
       font-weight: 400;
       line-height: 60px;
-      margin: 0 0 76px 110px;
+      margin: 0 110px 0 110px;
+      background-color: #FFFFFF;
     }
 
     .example__wrapper {
@@ -337,7 +361,7 @@
     }
 
     .example__sample {
-      margin: 70px 224px 54px 110px;
+      margin: 70px 224px 0 80px;
       display: flex;
     }
 
@@ -349,7 +373,7 @@
     .example__description {
       margin: 0;
       padding: 0;
-      width: 436px;
+      width: 433px;
       min-height: 96px;
       font-family: Lato;
       font-size: 16px;
@@ -364,20 +388,17 @@
 
     .example__tables {
       display: flex;
-      margin-bottom: 23px;
+      margin-bottom: 60px;
+      gap: 42px;
     }
 
     .example__result {
       width: 162px;
       min-height: 72px;
-      gap: 0px;
-      border: 1px 0px 0px 0px;
-      opacity: 0px;
       border: 1px solid #CDCDCD;
     }
 
     .example__value {
-      margin: 0;
       padding: 0;
       font-family: Oswald;
       font-size: 30px;
@@ -385,14 +406,17 @@
       line-height: 37px;
       text-align: center;
       margin: 15px 0 11px 0;
+      text-transform: uppercase;
     }
 
     .example__expenses {
+      position: absolute;
       font-family: Lato;
       font-size: 14px;
       font-weight: 400;
       line-height: 14px;
-      text-align: center;
+      padding: 0 10px 0 8px;
+      background: #F2F2F2;
     }
 
     .example__costs {
@@ -421,6 +445,8 @@
     .example__slider {
       position: relative;
       display: flex;
+      top: -205px;
+      right: -3px;
     }
 
     .example__after {

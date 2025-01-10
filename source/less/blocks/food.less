@@ -30,6 +30,18 @@
   margin: 0;
 }
 
+.food__title--weight {
+  display: flex;
+  align-items: center;
+  font-family: Oswald;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  text-transform: uppercase;
+  padding: 21px 0 22px 20px;
+  margin: 0;
+}
+
 .food__description {
   margin: 0 33px 38px 20px;
   font-family: Lato;
@@ -38,11 +50,11 @@
   line-height: 18px;
 }
 
-.food__image-slimming {
+.food__image--slimming {
   margin-right: 20px;
 }
 
-.food__image-weight {
+.food__image--weight {
   margin-right: 47px;
 }
 
@@ -86,19 +98,26 @@
     padding: 0;
   }
 
+  .food__title--weight {
+    margin: 45px 0 39px 33px;
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0;
+  }
+
   .food__description {
     margin: 0 61px 23px 52px;
     font-size: 16px;
     line-height: 24px;
   }
 
-  .food__image-slimming {
+  .food__image--slimming {
     margin-right: 62px;
     width: 200px;
     height: 211px;
   }
 
-  .food__image-weight {
+  .food__image--weight {
     margin-right: 47px;
     width: 268px;
     height: 200px;
@@ -137,38 +156,42 @@
   }
 
   .food__title {
-    margin: 41px 0 39px 52px;
+    margin: 41px 0 37px 52px;
     font-size: 36px;
     line-height: 36px;
   }
 
   .food__description {
-    margin: 0 61px 23px 52px;
+    margin: 0 61px 27px 52px;
     font-size: 16px;
     line-height: 24px;
   }
 
-  .food__image-slimming {
+  .food__image--slimming {
     margin-right: 62px;
     width: 100px;
     height: 106px;
   }
 
-  .food__image-weight {
+  .food__image--weight {
     margin-right: 47px;
     width: 134px;
     height: 100px;
   }
 
   .food__catalog {
-    margin: 0 0 59px 52px;
+    margin: 0 0 59px 53px;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
   }
 
+  .food__catalog:active {
+    opacity: 30%;
+  }
+
   .food__link {
-    margin-left: 25px;
+    margin: 0 0 3px 21px;
   }
 
 }

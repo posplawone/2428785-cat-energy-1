@@ -107,6 +107,12 @@
     color: #ffffff;
     text-decoration: none;
   }
+  .main-header__link:hover {
+    opacity: 80%;
+  }
+  .main-header__link:active {
+    opacity: 60%;
+  }
 }
 .site-header {
   display: flex;
@@ -295,13 +301,14 @@
 @media (min-width: 1440px) {
   .program {
     min-height: 542px;
+    margin-bottom: 115px;
   }
   .program::before {
     display: block;
     width: 720px;
     height: 694px;
     right: 0;
-    top: -235px;
+    top: -120px;
   }
   .program__wrapper {
     margin: 0 110px 0 110px;
@@ -316,7 +323,7 @@
     font-weight: 400;
     line-height: 60px;
     text-align: left;
-    margin: 0;
+    margin: -5px 0 0 0;
     color: #000000;
   }
   .program__slogan {
@@ -338,14 +345,14 @@
     height: 694px;
     z-index: -2;
     right: 0;
-    top: -235px;
+    top: -120px;
   }
   .program__image-package {
     position: absolute;
     width: 552px;
     height: 499px;
-    right: 0;
-    top: 0;
+    right: 331px;
+    top: 24px;
   }
   .program__toggle {
     width: 244px;
@@ -354,6 +361,13 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 26px;
+  }
+  .program__toggle:hover {
+    background-color: #5EAA2F;
+  }
+  .program__toggle:active {
+    background-color: #5EAA2F;
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 .food__wrapper {
@@ -384,6 +398,17 @@
   padding: 21px 0 22px 20px;
   margin: 0;
 }
+.food__title--weight {
+  display: flex;
+  align-items: center;
+  font-family: Oswald;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  text-transform: uppercase;
+  padding: 21px 0 22px 20px;
+  margin: 0;
+}
 .food__description {
   margin: 0 33px 38px 20px;
   font-family: Lato;
@@ -391,10 +416,10 @@
   font-weight: 400;
   line-height: 18px;
 }
-.food__image-slimming {
+.food__image--slimming {
   margin-right: 20px;
 }
-.food__image-weight {
+.food__image--weight {
   margin-right: 47px;
 }
 .food__catalog {
@@ -431,17 +456,23 @@
     line-height: 36px;
     padding: 0;
   }
+  .food__title--weight {
+    margin: 45px 0 39px 33px;
+    font-size: 36px;
+    line-height: 36px;
+    padding: 0;
+  }
   .food__description {
     margin: 0 61px 23px 52px;
     font-size: 16px;
     line-height: 24px;
   }
-  .food__image-slimming {
+  .food__image--slimming {
     margin-right: 62px;
     width: 200px;
     height: 211px;
   }
-  .food__image-weight {
+  .food__image--weight {
     margin-right: 47px;
     width: 268px;
     height: 200px;
@@ -472,33 +503,36 @@
     margin-bottom: 0;
   }
   .food__title {
-    margin: 41px 0 39px 52px;
+    margin: 41px 0 37px 52px;
     font-size: 36px;
     line-height: 36px;
   }
   .food__description {
-    margin: 0 61px 23px 52px;
+    margin: 0 61px 27px 52px;
     font-size: 16px;
     line-height: 24px;
   }
-  .food__image-slimming {
+  .food__image--slimming {
     margin-right: 62px;
     width: 100px;
     height: 106px;
   }
-  .food__image-weight {
+  .food__image--weight {
     margin-right: 47px;
     width: 134px;
     height: 100px;
   }
   .food__catalog {
-    margin: 0 0 59px 52px;
+    margin: 0 0 59px 53px;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
   }
+  .food__catalog:active {
+    opacity: 30%;
+  }
   .food__link {
-    margin-left: 25px;
+    margin: 0 0 3px 21px;
   }
 }
 .work__wrapper {
@@ -603,7 +637,7 @@
 }
 @media (min-width: 1440px) {
   .work__wrapper {
-    margin: 0 110px 69px 110px;
+    margin: 0 110px 49px 110px;
   }
   .work__title {
     font-family: Oswald;
@@ -661,6 +695,7 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
+    margin: 26px 0 0 0;
   }
 }
 .example {
@@ -798,6 +833,19 @@
   background-color: currentColor;
 }
 .example__button:hover .example__button--vector {
+  fill: currentColor;
+}
+.example__button:active {
+  color: #68B738;
+  opacity: 60%;
+}
+.example__button:active::before {
+  border-color: currentColor;
+}
+.example__button:active::after {
+  background-color: currentColor;
+}
+.example__button:active .example__button--vector {
   fill: currentColor;
 }
 @media (min-width: 768px) {
@@ -944,18 +992,24 @@
     position: relative;
   }
   .example__title {
+    background-color: #FFFFFF;
+    height: 136px;
+    margin: 0;
+  }
+  .example__heading {
     font-family: Oswald;
     font-size: 60px;
     font-weight: 400;
     line-height: 60px;
-    margin: 0 0 76px 110px;
+    margin: 0 110px 0 110px;
+    background-color: #FFFFFF;
   }
   .example__wrapper {
     display: flex;
     background-color: #F2F2F2;
   }
   .example__sample {
-    margin: 70px 224px 54px 110px;
+    margin: 70px 224px 0 80px;
     display: flex;
   }
   .example__block {
@@ -965,7 +1019,7 @@
   .example__description {
     margin: 0;
     padding: 0;
-    width: 436px;
+    width: 433px;
     min-height: 96px;
     font-family: Lato;
     font-size: 16px;
@@ -978,18 +1032,15 @@
   }
   .example__tables {
     display: flex;
-    margin-bottom: 23px;
+    margin-bottom: 60px;
+    gap: 42px;
   }
   .example__result {
     width: 162px;
     min-height: 72px;
-    gap: 0px;
-    border: 1px 0px 0px 0px;
-    opacity: 0px;
     border: 1px solid #CDCDCD;
   }
   .example__value {
-    margin: 0;
     padding: 0;
     font-family: Oswald;
     font-size: 30px;
@@ -997,13 +1048,16 @@
     line-height: 37px;
     text-align: center;
     margin: 15px 0 11px 0;
+    text-transform: uppercase;
   }
   .example__expenses {
+    position: absolute;
     font-family: Lato;
     font-size: 14px;
     font-weight: 400;
     line-height: 14px;
-    text-align: center;
+    padding: 0 10px 0 8px;
+    background: #F2F2F2;
   }
   .example__costs {
     display: flex;
@@ -1028,6 +1082,8 @@
   .example__slider {
     position: relative;
     display: flex;
+    top: -205px;
+    right: -3px;
   }
   .example__after {
     display: flex;
