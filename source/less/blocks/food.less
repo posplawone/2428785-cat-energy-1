@@ -21,7 +21,7 @@
 .food__title {
   display: flex;
   align-items: center;
-  font-family: Oswald;
+  font-family: "Oswald", Arial, sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 37px;
@@ -33,7 +33,7 @@
 .food__title--weight {
   display: flex;
   align-items: center;
-  font-family: Oswald;
+  font-family: "Oswald", Arial, sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 37px;
@@ -44,7 +44,7 @@
 
 .food__description {
   margin: 0 33px 38px 20px;
-  font-family: Lato;
+  font-family: "Lato", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -60,7 +60,7 @@
 
 .food__catalog {
   margin: 0 0 22px 20px;
-  font-family: Oswald;
+  font-family: "Oswald", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
@@ -184,6 +184,12 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
+  }
+
+  .food__catalog:hover {
+    & .food__link {
+      width: 32px;
+    }
   }
 
   .food__catalog:active {

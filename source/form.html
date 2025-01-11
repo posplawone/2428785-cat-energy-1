@@ -54,43 +54,43 @@
   </header>
 
   <main class="main-container">
-    <section class="form">
-      <div class="form__wrapper">
-        <form class="form__selection" action="https://echo.htmlacademy.ru">
-          <h1 class="form__title">Подбор программы</h1>
-          <p class="form__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
-          <div class="form__tables">
-            <div class="form__profile">
-              <ul class="form__list">
-                <li class="form__item input-block">
-                  <label class="input-block__label" for="form__phone">Имя:*</label>
-                  <input class="input-block__field" id="form__phone" name="form__phone" placeholder="Барсик">
+    <form class="form" action="https://echo.htmlacademy.ru">
+      <section class="selection">
+        <div class="selection__wrapper">
+          <h1 class="selection__title">Подбор программы</h1>
+          <p class="selection__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <div class="selection__tables">
+            <div class="selection__profile">
+              <ul class="selection__list">
+                <li class="selection__item input-block">
+                  <label class="input-block__label" for="selection__name">Имя:*</label>
+                  <input class="input-block__field" id="selection__name" name="selection__name" placeholder="Барсик" required>
                 </li>
-                <li class="form__item input-block">
-                  <label class="input-block__label" for="form__weight">Вес&nbsp;(кг):*</label>
-                  <input class="input-block__field" id="form__weight" name="form__weight" placeholder="7">
+                <li class="selection__item input-block">
+                  <label class="input-block__label" for="selection__weight">Вес&nbsp;(кг):*</label>
+                  <input class="input-block__field" id="selection__weight" name="selection__weight" placeholder="7" required>
                 </li>
-                <li class="form__item input-block">
-                  <label class="input-block__label" for="form__age">Возраст&nbsp;(лет):*</label>
-                  <input class="input-block__field" id="form__age" name="form__age" placeholder="7">
+                <li class="selection__item input-block">
+                  <label class="input-block__label" for="selection__age">Возраст&nbsp;(лет):*</label>
+                  <input class="input-block__field" id="selection__age" name="selection__age" placeholder="7" required>
                 </li>
               </ul>
             </div>
-            <div class="form__food">
-              <ul class="form__list">
-                <li class="form__item radio-block">
+            <div class="selection__food">
+              <ul class="selection__list">
+                <li class="selection__item radio-block">
                   <label class="radio-block__control">
                   <input class="radio-block__input" type="radio" name="food__program" value="slimming" checked>
                   <span class="radio-block__label">Похудение</span>
                 </label>
                 </li>
-                <li class="form__item radio-block">
+                <li class="selection__item radio-block">
                   <label class="radio-block__control">
                   <input class="radio-block__input" type="radio" name="food__program" value="weight">
                   <span class="radio-block__label">Набор массы</span>
                 </label>
                 </li>
-                <li class="form__item radio-block">
+                <li class="selection__item radio-block">
                   <label class="radio-block__control">
                   <input class="radio-block__input" type="radio" name="food__program" value="unknown">
                   <span class="radio-block__label">Не знаю (нужен ваш совет)</span>
@@ -99,69 +99,68 @@
               </ul>
             </div>
           </div>
-        </form>
-      </div>
-    </section>
-
-    <section class="contacts">
-      <div class="contacts__wrapper">
-        <h2 class="contacts__title">Контактные данные (владельца кота)</h2>
-        <ul class="contacts__list">
-          <li class="contacts__item input-block">
-            <label class="input-block__label" for="form__email">E-mail:*</label>
-            <input class="input-block__field" type="email" id="form__email" name="form__email" placeholder="Kuklachev@gmail.com">
-          </li>
-          <li class="contacts__item input-block">
-            <label class="input-block__label" for="form__phone">Телефон:*</label>
-            <input class="input-block__field" type="tel" id="form__phone" name="form__phone" placeholder="8 (960) 900-60-90">
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="comment">
-      <div class="comment__wrapper">
-        <h2 class="comment__title">Комментарий</h2>
-        <label class="visually-hidden" for="comment__message"></label>
-        <textarea class="comment__message" id="comment-message" name="commment-message" placeholder="Расскажите обо всех повадках кота" required></textarea>
-      </div>
-    </section>
-
-    <section class="additionally">
-      <div class="additionally__wrapper">
-        <h2 class="additionally__title">Дополнительно</h2>
-        <ul class="additionally__list">
-          <li class="additionally__item checkbox-block">
-            <label class="checkbox-block__control">
-            <input class="checkbox-block__input" type="checkbox" name="sweetener" checked>
-            <span class="checkbox-block__label">Сахарозаменитель</span>
-            </label>
-          </li>
-          <li class="additionally__item checkbox-block">
-            <label class="checkbox-block__control">
-            <input class="checkbox-block__input" type="checkbox" name="water">
-            <span class="checkbox-block__label">Питьевая вода</span>
-            </label>
-          </li>
-          <li class="additionally__item checkbox-block">
-            <label class="checkbox-block__control">
-            <input class="checkbox-block__input" type="checkbox" name="milk">
-            <span class="checkbox-block__label">Молоко</span>
-            </label>
-          </li>
-          <li class="additionally__item checkbox-block">
-            <label class="checkbox-block__control">
-            <input class="checkbox-block__input" type="checkbox" name="vitamins">
-            <span class="checkbox-block__label">Витамины</span>
-            </label>
-          </li>
-        </ul>
-        <div class="additionally__submit">
-          <button class="additionally__button" type="submit">Отправить заявку</button>
-          <span class="additionally__important">* — Обязательные поля</span>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <h2 class="contacts__title">Контактные данные (владельца кота)</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item input-block">
+              <label class="input-block__label" for="selection__email">E-mail:*</label>
+              <input class="input-block__field" type="email" id="selection__email" name="selection__email" placeholder="Kuklachev@gmail.com" required>
+            </li>
+            <li class="contacts__item input-block">
+              <label class="input-block__label" for="selection__phone">Телефон:*</label>
+              <input class="input-block__field" type="tel" id="selection__phone" name="selection__phone" placeholder="8 (960) 900-60-90" required>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="comment">
+        <div class="comment__wrapper">
+          <label class="comment__title" for="comment__message">Комментарий</label>
+          <textarea class="comment__message" id="comment-message" name="commment-message" placeholder="Расскажите обо всех повадках кота" required></textarea>
+        </div>
+      </section>
+
+      <section class="additionally">
+        <div class="additionally__wrapper">
+          <h2 class="additionally__title">Дополнительно</h2>
+          <ul class="additionally__list">
+            <li class="additionally__item checkbox-block">
+              <label class="checkbox-block__control">
+              <input class="checkbox-block__input" type="checkbox" name="sweetener" checked>
+              <span class="checkbox-block__label">Сахарозаменитель</span>
+              </label>
+            </li>
+            <li class="additionally__item checkbox-block">
+              <label class="checkbox-block__control">
+              <input class="checkbox-block__input" type="checkbox" name="water">
+              <span class="checkbox-block__label">Питьевая вода</span>
+              </label>
+            </li>
+            <li class="additionally__item checkbox-block">
+              <label class="checkbox-block__control">
+              <input class="checkbox-block__input" type="checkbox" name="milk">
+              <span class="checkbox-block__label">Молоко</span>
+              </label>
+            </li>
+            <li class="additionally__item checkbox-block">
+              <label class="checkbox-block__control">
+              <input class="checkbox-block__input" type="checkbox" name="vitamins">
+              <span class="checkbox-block__label">Витамины</span>
+              </label>
+            </li>
+          </ul>
+          <div class="additionally__submit">
+            <button class="additionally__button" type="submit">Отправить заявку</button>
+            <span class="additionally__important">* — Обязательные поля</span>
+          </div>
+        </div>
+      </section>
+    </form>
 
     <section class="map">
       <div class="map__wrapper">
