@@ -65,7 +65,7 @@
                   <a class="product__link" href="#">
                     <picture>
                       <source media="(min-width: 768px)" srcset="img/little-chicken-tablet.png 1x, img/little-chicken-tablet@2x.png 2x" width="162" height="172">
-                      <img class="product__image" src="img/little-chicken-mobile.png" srcset="img/little-chicken-mobile@2x.png 2x" width="68" height="87" alt="Маленький корм cо вкусом курицы">
+                      <img class="product__image-small" src="img/little-chicken-mobile.png" srcset="img/little-chicken-mobile@2x.png 2x" width="68" height="87" alt="Маленький корм cо вкусом курицы">
                     </picture>
                   </a>
                   <ul class="product__description">
@@ -153,7 +153,7 @@
               <a class="product__link" href="#">
                 <picture>
                   <source media="(min-width: 768px)" srcset="img/little-fish-tablet.png 1x, img/little-fish-tablet@2x.png 2x" width="164" height="174">
-                  <img class="product__image" src="img/little-fish-mobile.png" srcset="img/little-fish-mobile@2x.png 2x" width="68" height="79" alt="Маленький корм со вкусом рыбы">
+                  <img class="product__image-small" src="img/little-fish-mobile.png" srcset="img/little-fish-mobile@2x.png 2x" width="68" height="79" alt="Маленький корм со вкусом рыбы">
                 </picture>
               </a>
               <ul class="product__description">
@@ -241,7 +241,7 @@
               <a class="product__link" href="#">
                 <picture>
                   <source media="(min-width: 768px)" srcset="img/little-buckwheat-tablet.png 1x, img/little-buckwheat-tablet@2x.png 2x" width="162" height="172">
-                  <img class="product__image" src="img/little-buckwheat-mobile.png" srcset="img/little-buckwheat-mobile@2x.png 2x" width="68" height="79" alt="Маленький корм со вкусом гречки">
+                  <img class="product__image-small" src="img/little-buckwheat-mobile.png" srcset="img/little-buckwheat-mobile@2x.png 2x" width="68" height="79" alt="Маленький корм со вкусом гречки">
                 </picture>
               </a>
               <ul class="product__description">
@@ -329,7 +329,7 @@
               <a class="product__link" href="#">
                 <picture>
                   <source media="(min-width: 768px)" srcset="img/little-rice-tablet.png 1x, img/little-rice-tablet@2x.png 2x" width="164" height="174">
-                  <img class="product__image" src="img/little-rice-mobile.png" srcset="img/little-rice-mobile@2x.png 2x" width="72" height="85" alt="Маленький корм со вкусом риса">
+                  <img class="product__image-small" src="img/little-rice-mobile.png" srcset="img/little-rice-mobile@2x.png 2x" width="72" height="85" alt="Маленький корм со вкусом риса">
                 </picture>
               </a>
               <ul class="product__description">
@@ -466,7 +466,8 @@
             <img class="extra__image" src="img/gift.svg" width="80" height="83"
             alt="">
             <p class="extra__description">
-              Закажите все и получите чехол для кота в подарок!
+              Закажите все<br>
+              и получите чехол для кота в подарок!
             </p>
           </div>
         </div>
@@ -475,6 +476,10 @@
 
     <section class="map">
       <div class="map__wrapper">
+        <picture>
+          <source media="(min-width: 768px)" srcset="/img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+          <img class="map__image" src="/img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" width="1440" height="400" alt="Карта">
+        </picture>
         <address class="map__contacts">
           <p class="map__invite">
             Приглашаем к&nbsp;сотрудничеству дилеров!
@@ -497,7 +502,7 @@
     <div class="main-footer__wrapper">
       <div class="main-footer__logotype logotype">
         <a class="logotype__link" href="#">
-          <img class="logotype__image" src="img/logotype.svg" width="128" height="24">
+          <img class="logotype__image" src="img/logotype.svg" width="128" height="24" alt="Логотип сайта">
         </a>
       </div>
       <div class="main-footer__social social">
@@ -528,8 +533,6 @@
       <div class="main-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru">
           HTML Academy
-        </a>
-        <a class="copyright__link-image" href="https://htmlacademy.ru">
           <svg class="copyright__image" width="27" height="34">
             <use xlink:href="#icon-copyright"></use>
           </svg>

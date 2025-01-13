@@ -71,28 +71,31 @@
                   <input class="input-block__field" id="selection__weight" name="selection__weight" placeholder="7" required>
                 </li>
                 <li class="selection__item input-block">
-                  <label class="input-block__label" for="selection__age">Возраст&nbsp;(лет):*</label>
-                  <input class="input-block__field" id="selection__age" name="selection__age" placeholder="7" required>
+                  <label class="input-block__label" for="selection__age">Возраст&nbsp;(лет):</label>
+                  <input class="input-block__field" id="selection__age" name="selection__age" placeholder="7">
                 </li>
               </ul>
             </div>
             <div class="selection__food">
               <ul class="selection__list">
-                <li class="selection__item radio-block">
+                <li class="selection__item-food radio-block">
                   <label class="radio-block__control">
-                  <input class="radio-block__input" type="radio" name="food__program" value="slimming" checked>
+                  <input class="radio-block__input visually-hidden" type="radio" name="food__program" value="slimming" checked>
+                  <span class="radio-block__mark"></span>
                   <span class="radio-block__label">Похудение</span>
                 </label>
                 </li>
-                <li class="selection__item radio-block">
+                <li class="selection__item-food radio-block">
                   <label class="radio-block__control">
-                  <input class="radio-block__input" type="radio" name="food__program" value="weight">
+                  <input class="radio-block__input visually-hidden" type="radio" name="food__program" value="weight">
+                  <span class="radio-block__mark"></span>
                   <span class="radio-block__label">Набор массы</span>
                 </label>
                 </li>
-                <li class="selection__item radio-block">
+                <li class="selection__item-food radio-block">
                   <label class="radio-block__control">
-                  <input class="radio-block__input" type="radio" name="food__program" value="unknown">
+                  <input class="radio-block__input visually-hidden" type="radio" name="food__program" value="unknown">
+                  <span class="radio-block__mark"></span>
                   <span class="radio-block__label">Не знаю (нужен ваш совет)</span>
                 </label>
                 </li>
@@ -131,25 +134,29 @@
           <ul class="additionally__list">
             <li class="additionally__item checkbox-block">
               <label class="checkbox-block__control">
-              <input class="checkbox-block__input" type="checkbox" name="sweetener" checked>
+              <input class="checkbox-block__input visually-hidden" type="checkbox" name="sweetener" checked>
+              <span class="checkbox-block__mark"></span>
               <span class="checkbox-block__label">Сахарозаменитель</span>
               </label>
             </li>
             <li class="additionally__item checkbox-block">
               <label class="checkbox-block__control">
-              <input class="checkbox-block__input" type="checkbox" name="water">
+              <input class="checkbox-block__input visually-hidden" type="checkbox" name="water">
+              <span class="checkbox-block__mark"></span>
               <span class="checkbox-block__label">Питьевая вода</span>
               </label>
             </li>
             <li class="additionally__item checkbox-block">
               <label class="checkbox-block__control">
-              <input class="checkbox-block__input" type="checkbox" name="milk">
+              <input class="checkbox-block__input visually-hidden" type="checkbox" name="milk">
+              <span class="checkbox-block__mark"></span>
               <span class="checkbox-block__label">Молоко</span>
               </label>
             </li>
             <li class="additionally__item checkbox-block">
               <label class="checkbox-block__control">
-              <input class="checkbox-block__input" type="checkbox" name="vitamins">
+              <input class="checkbox-block__input visually-hidden" type="checkbox" name="vitamins">
+              <span class="checkbox-block__mark"></span>
               <span class="checkbox-block__label">Витамины</span>
               </label>
             </li>
@@ -164,6 +171,10 @@
 
     <section class="map">
       <div class="map__wrapper">
+        <picture>
+          <source media="(min-width: 768px)" srcset="/img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
+          <img class="map__image" src="/img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg 2x" width="1440" height="400" alt="Карта">
+        </picture>
         <address class="map__contacts">
           <p class="map__invite">
             Приглашаем к&nbsp;сотрудничеству дилеров!
@@ -186,7 +197,7 @@
     <div class="main-footer__wrapper">
       <div class="main-footer__logotype logotype">
         <a class="logotype__link" href="#">
-          <img class="logotype__image" src="img/logotype.svg" width="128" height="24">
+          <img class="logotype__image" src="img/logotype.svg" width="128" height="24" alt="Логотип сайта">
         </a>
       </div>
       <div class="main-footer__social social">
@@ -217,8 +228,6 @@
       <div class="main-footer__copyright copyright">
         <a class="copyright__link" href="https://htmlacademy.ru">
           HTML Academy
-        </a>
-        <a class="copyright__link-image" href="https://htmlacademy.ru">
           <svg class="copyright__image" width="27" height="34">
             <use xlink:href="#icon-copyright"></use>
           </svg>
