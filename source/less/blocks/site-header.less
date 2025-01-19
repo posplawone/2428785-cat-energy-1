@@ -80,9 +80,25 @@
     list-style-type: none;
   }
 
+  .site-header__item--current {
+    text-decoration: underline;
+    text-decoration-color: #68B738;
+    text-underline-offset: 10px;
+  }
+
   .site-header__link {
     color: #111111;
     text-decoration: none;
+  }
+
+  .site-header__link:hover {
+    opacity: 60%;
+  }
+
+  .site-header__link:active {
+    text-decoration: underline;
+    text-decoration-color: #68B738;
+    text-underline-offset: 10px;
   }
 
 }
