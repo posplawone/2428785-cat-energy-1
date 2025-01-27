@@ -10,6 +10,7 @@ import svgo from 'gulp-svgo';
 import rename from 'gulp-rename';
 import svgstore from 'gulp-svgstore';
 import {deleteAsync} from 'del';
+import minify from 'gulp-minify';
 
 // Styles
 
@@ -26,9 +27,11 @@ const styles = () => {
 
 // HTML
 const html = () => {
-  return gulp.src('source/*.html')
+  return gulp
+    .src("source/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest('build'));
+    .pipe(gulp.dest("build"))
+    .pipe(browser.stream());
 };
 
 // Images
@@ -94,6 +97,18 @@ const clean = () => {
   return deleteAsync('build');
 }
 
+// Scripts
+
+const scripts = (done) => {
+  gulp
+    .src(["source/js/*.js"], {
+      base: "source",
+    })
+    .pipe(minify())
+    .pipe(gulp.dest("build"));
+  done();
+};
+
 // Server
 
 const server = (done) => {
@@ -111,8 +126,9 @@ const server = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch('source/less/**/*.less', gulp.series(styles));
-  gulp.watch('source/*.html').on('change', browser.reload);
+  gulp.watch("source/less/**/*.less", gulp.series(styles));
+  gulp.watch("source/js/**/*.js", gulp.series(scripts));
+  gulp.watch("source/*.html", gulp.series(html));
 }
 
 // Default
@@ -123,6 +139,7 @@ export default gulp.series(
   copyImages,
   gulp.parallel(
     html,
+    scripts,
     styles,
     svg,
     sprite
@@ -140,6 +157,7 @@ export const build = gulp.series(
   optimizeImages,
   gulp.parallel(
     html,
+    scripts,
     styles,
     server,
     watcher,

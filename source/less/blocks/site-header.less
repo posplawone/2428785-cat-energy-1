@@ -1,13 +1,19 @@
 .site-header {
   display: flex;
-  margin: 14px 20px;
+  margin: 14px 20px 36px 20px;
   justify-content: space-between;
+  position: relative;
+  width: 708px;
 }
 
 .site-header__toggle {
   padding: 0;
   border: none;
   background-color: transparent;
+  position: absolute;
+  right: 0px;
+  cursor: pointer;
+  padding-top: 7px;
 }
 
 .site-header__list {
@@ -17,7 +23,7 @@
 @media (min-width: @tabletop-width) {
 
   .site-header {
-    margin: 25px 30px 0 30px;
+    margin: 25px 35px 0 30px;
     justify-content: space-between;
   }
 
@@ -36,9 +42,9 @@
     display: flex;
     gap: 33px;
     font-family: "Oswald", Arial, sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 24px;
     text-align: left;
     text-transform: uppercase;
     align-items: center;
@@ -49,6 +55,12 @@
     text-decoration: none;
   }
 
+  .site-header__item--current {
+    text-decoration: underline;
+    text-decoration-color: #68B738;
+    text-underline-offset: 10px;
+  }
+
 }
 
 @media (min-width: @desktop-width) {
@@ -57,6 +69,7 @@
     display: flex;
     margin: 55px 110px 69px 110px;
     justify-content: space-between;
+    width: 1220px;
   }
 
   .site-header__navigation {
@@ -78,6 +91,7 @@
     text-align: left;
     text-transform: uppercase;
     list-style-type: none;
+    width: 478px;
   }
 
   .site-header__item--current {

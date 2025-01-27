@@ -98,14 +98,15 @@
 }
 
 .extra__image {
-  display: block;
-  margin: 0 auto;
-  padding: 0;
+  position: absolute;
+  left: 100px;
+  top: 60px;
 }
 
 .extra__description {
-  margin: 0 auto;
-  padding: 0;
+  position: absolute;
+  right: 60px;
+  top: 172px;
   font-family: "Lato", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -129,6 +130,7 @@
     margin: 0;
     padding: 0;
     margin-bottom: 108px;
+    margin-left: 40px;
   }
 
   .extra__table {
@@ -139,19 +141,26 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    width: 708px;
+    width: 632px;
+    margin: 0 auto;
+    margin-bottom: 100px;
   }
 
   .extra__item {
     display: block;
     width: 632px;
     min-height: 85px;
-    margin-top: 28px;
+    margin: 28px 0 53px;
+  }
+
+  .extra__item:last-child {
+    margin-bottom: 0;
   }
 
   .extra__total {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 25px;
   }
 
   .extra__name {
@@ -162,6 +171,10 @@
     text-transform: uppercase;
     margin: 0;
     padding: 0;
+  }
+
+  .extra__card {
+    margin: 0;
   }
 
   .extra__amount {
@@ -211,10 +224,6 @@
     color:rgba(255, 255, 255, 0.3)
   }
 
-  .extra__item:last-child {
-    margin-bottom: 0;
-  }
-
   .extra__gift {
     position: relative;
     width: 707px;
@@ -237,11 +246,9 @@
   }
 
   .extra__image {
-    display: block;
-    margin: 0 auto;
-    padding: 0;
-    margin-top: 56px;
-    margin-bottom: 46px;
+    position: absolute;
+    left: 78px;
+    top: 56px;
   }
 
   .extra__description {
@@ -251,9 +258,12 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
-    text-align: center;
     color: #FFFFFF;
     width: 161px;
+    position: absolute;
+    right: 124px;
+    top: 70px;
+    text-align: start;
   }
 }
 
@@ -288,6 +298,7 @@
     display: grid;
     grid-template-columns: 651px 245px;
     min-height: 40px;
+    margin: 27px 0;
   }
 
   .extra__total {
@@ -371,14 +382,15 @@
   }
 
   .extra__image {
-    display: block;
-    margin: 0 auto;
-    padding: 0;
-    margin-top: 56px;
-    margin-bottom: 46px;
+    position: absolute;
+    left: 84px;
+    top: 56px;
   }
 
   .extra__description {
+    position: absolute;
+    right: 40px;
+    top: 186px;
     margin: 0 auto;
     padding: 0;
     font-family: "Lato", Arial, sans-serif;

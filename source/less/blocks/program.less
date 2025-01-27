@@ -52,13 +52,17 @@
   top: 0;
 }
 
+.program__image-package {
+  display: block;
+  margin: 0 auto;
+}
+
 .program__toggle {
-  padding: 10px 44px 10px 44px;
+  padding: 8px 44px 8px 44px;
   background-color: #68B738;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  margin-top: 23px;
   width: 280px;
   margin-left: 20px;
   text-align: center;
@@ -68,6 +72,7 @@
 
   .program__wrapper {
     margin: 0 30px;
+    min-height: 875px;
   }
 
   .program::before {
@@ -75,7 +80,9 @@
   }
 
   .program__header {
-    margin: 65px 0 50px 90px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 62px 0 0px 90px;
     padding: 0;
     width: 414px;
   }
@@ -91,13 +98,12 @@
   }
 
   .program__slogan {
-    margin: 0;
+    margin: 40px 0 50px 0;
     font-family: "Oswald", Arial, sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 20px;
     text-align: left;
-    margin-top: 40px;
     text-transform: uppercase;
     color: #000000;
   }
@@ -110,8 +116,8 @@
     position: absolute;
     width: 709px;
     height: 609px;
-    right: 0;
-    top: 0;
+    right: 28px;
+    top: 262px;
     z-index: -1;
   }
 
@@ -119,10 +125,10 @@
     width: 244px;
     margin: 0;
     padding: 14px 26px 14px 26px;
-    margin-left: 90px;
     font-size: 20px;
     font-weight: 400;
     line-height: 26px;
+    margin-left: 90px;
   }
 
 }
@@ -144,6 +150,7 @@
 
   .program__wrapper {
     margin: 0 110px 0 110px;
+    min-height: 0;
   }
 
   .program__header {

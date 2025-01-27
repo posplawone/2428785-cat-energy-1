@@ -9,13 +9,15 @@
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
-  margin-bottom: 41px;
+  margin-bottom: 62px;
 }
 
 .products__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .products__item {
@@ -25,7 +27,7 @@
 @media (min-width: @tabletop-width) {
 
   .products__wrapper {
-    margin: 65px 30px 70px 30px;
+    margin: 60px 30px 70px 30px;
   }
 
   .products__title {
@@ -70,6 +72,7 @@
     min-height: 430px;
     z-index: -1;
     bottom: 0;
+    left: 0;
     border: 2px solid #F2F2F2;
   }
 

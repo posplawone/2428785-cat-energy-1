@@ -1,6 +1,7 @@
 .example {
   position: relative;
   background-color: #F2F2F2;
+  padding-bottom: 40px;
 }
 
 .example__title {
@@ -9,16 +10,21 @@
   font-weight: 400;
   line-height: 40px;
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
-  padding: 25px 0 0 20px;
+  padding: 24px 0 0 20px;
 }
 
-.example__wrapper {
-  background-color: #F2F2F2;
+.example__heading {
+  font-family: Oswald;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  margin: 0;
 }
 
-.example__sample {
-  margin: 40px 20px 0 20px;
+.example__block {
+  margin-left: 20px;
 }
 
 .example__description {
@@ -36,6 +42,7 @@
 .example__tables {
   display: flex;
   margin-bottom: 20px;
+  gap: 32px;
 }
 
 .example__result {
@@ -52,7 +59,8 @@
   font-weight: 400;
   line-height: 24px;
   text-align: center;
-  margin: 15px 0 18px 0;
+  margin-top: 14px;
+  text-transform: uppercase;
 }
 
 .example__expenses {
@@ -61,13 +69,17 @@
   font-weight: 400;
   line-height: 12px;
   text-align: center;
-  margin: 0;
-  padding: 0;
+  margin: 8px auto -16px;
+  padding: 0 10px 0 8px;
+  display: table;
+  background: #F2F2F2;
+  width: 86px;
 }
 
 .example__costs {
   display: flex;
-  justify-content: center;
+  gap: 4px;
+  margin-left: 47px;
 }
 
 .example__price {
@@ -91,6 +103,7 @@
   position: relative;
   display: flex;
   width: 280px;
+  margin: 0 auto;
 }
 
 .example__after {
@@ -178,6 +191,9 @@
 
   .example {
     position: relative;
+    background-color: #FFFFFF;
+    padding: 0;
+    margin-bottom: 98px;
   }
 
   .example__title {
@@ -187,30 +203,28 @@
     line-height: 60px;
     margin-left: 30px;
     padding: 0;
+    margin-bottom: 60px;
   }
 
-  .example__wrapper {
-    display: flex;
-    flex-direction: column;
-    background-color: #F2F2F2;
-    margin: 0 30px;
+  .example__heading {
+    font-size: 60px;
+    line-height: 60px;
   }
 
-  .example__sample {
-    margin: 0;
-    margin-top: 60px;
+  .example__block {
+    margin-left: 30px;
   }
 
   .example__description {
     margin: 0;
     padding: 0;
-    width: 436px;
+    width: 706px;
     min-height: 96px;
     font-family: "Lato", Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
-    margin-bottom: 55px;
+    margin-bottom: 30px;
   }
 
   .example__total {
@@ -221,15 +235,14 @@
 
   .example__tables {
     display: flex;
-    margin-bottom: 23px;
+    margin: 0;
+    gap: 44px;
   }
 
   .example__result {
     width: 162px;
     min-height: 72px;
     gap: 0px;
-    border: 1px 0px 0px 0px;
-    opacity: 0px;
     border: 1px solid #CDCDCD;
   }
 
@@ -250,10 +263,13 @@
     font-weight: 400;
     line-height: 14px;
     text-align: center;
+    background-color: #FFFFFF;
+    width: 144px;
   }
 
   .example__costs {
     display: block;
+    margin: 0;
   }
 
   .example__price {
@@ -275,17 +291,35 @@
     text-transform: uppercase;
     margin: 0;
     padding: 0;
+    margin-bottom: 10px;
   }
 
   .example__slider {
     position: relative;
     display: flex;
     width: 560px;
+    margin-top: 104px;
+  }
+
+  .example__slider::before {
+    position: absolute;
+    content: "";
+    background: #EAEAEA;
+    height: 462px;
+    width: 768px;
+    z-index: 1;
+    top: 152px;
+    right: -104px;
+  }
+
+  .example__before {
+    z-index: 2;
   }
 
   .example__after {
     display: flex;
     justify-content: flex-end;
+    z-index: 2;
   }
 
   .example__image {
@@ -306,6 +340,7 @@
     background: #FFFFFF;
     top: 239px;
     right: 260px;
+    z-index: 2;
   }
 
   .example__button::before {
@@ -342,7 +377,8 @@
       grid-template-columns: 436px 560px;
       justify-content: space-between;
       background: transparent;
-      padding-bottom: 75px;
+      padding-bottom: 65px;
+      margin: 0;
     }
 
     .example::before {
@@ -353,12 +389,11 @@
       left: 0;
       bottom: 0;
       background: #F2F2F2;
-      z-index: -1;
+      z-index: 1;
   }
 
     .example__title {
       background-color: #FFFFFF;
-      min-height: 76px;
       margin: 0;
       grid-column: 1 / 2;
       grid-row: 1 / 2;
@@ -376,9 +411,10 @@
 
     .example__block {
       width: 436px;
-      margin: 130px 0 0 110px;
+      margin: 146px 0 0 110px;
       grid-column: 1 / 2;
       grid-row: 2 / 3;
+      z-index: 2;
     }
 
     .example__description {
@@ -450,7 +486,7 @@
       font-size: 20px;
       font-weight: 400;
       line-height: 20px;
-      margin-right: 67px;
+      margin-right: 62px;
       text-transform: uppercase;
     }
 
@@ -459,6 +495,12 @@
       grid-column: 2 / 3;
       grid-row: 1 / 3;
       right: 110px;
+      z-index: 2;
+      margin: 0;
+    }
+
+    .example__slider::before {
+      display: none;
     }
 
     .example__after {
