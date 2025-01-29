@@ -1,3 +1,18 @@
+.main-footer {
+  position: relative;
+}
+
+.main-footer::before {
+  content: '';
+  position: absolute;
+  left: calc((100vw - 100%) / -2);
+  top: 0;
+  background-color: #F2F2F2;
+  height: 100%;
+  width: 100vw;
+  z-index: -1;
+}
+
 .main-footer__wrapper {
   margin: 0;
   padding: 40px 20px;

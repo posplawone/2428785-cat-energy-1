@@ -1,5 +1,5 @@
 .selection__wrapper {
-  margin: 0 20px 45px 20px;
+  margin: 25px 20px 45px 20px;
 }
 
 .selection__title {
@@ -41,6 +41,12 @@
   align-items: center;
 }
 
+.input-block {
+  &+.input-block__field--error+.contacts__image {
+    stroke: #FF8282;
+  }
+}
+
 .input-block__label {
   font-family: "Oswald", Arial, sans-serif;
   font-size: 16px;
@@ -73,6 +79,10 @@
   line-height: 18px;
   text-transform: uppercase;
   padding-left: 14px;
+}
+
+.input-block__field--error {
+  outline: 1px solid #FF8282;
 }
 
 .selection__food {
@@ -120,12 +130,16 @@
 }
 
 .radio-block__mark:hover {
-  border: 1px solid #BABABA;
+  outline: 1px solid #BABABA;
 }
 
 .radio-block__input:disabled + .radio-block__mark + .radio-block__label{
   opacity: 30%;
   pointer-events: none;
+}
+
+.radio-block__mark:focus {
+  outline: 2px solid #444444;
 }
 
 @media (min-width: @tabletop-width) {
@@ -256,7 +270,7 @@
 @media (min-width: @desktop-width) {
 
   .selection__wrapper {
-    margin: 0 110px 70px 110px;
+    margin: 68px 110px 70px 110px;
   }
 
   .selection__title {

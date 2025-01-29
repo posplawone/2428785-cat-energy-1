@@ -6,8 +6,10 @@
   position: absolute;
   content: "";
   background-color: #68B738D9;
-  width: 320px;
-  height: 302px;
+  height: calc(100% - 175px);
+  width: 100vw;
+  left: calc((100vw - 100%) / -2);
+  top: 0;
   z-index: -1;
 }
 
@@ -142,10 +144,11 @@
 
   .program::before {
     display: block;
-    width: 720px;
-    height: 694px;
-    right: 0;
+    left: 50%;
     top: -120px;
+    height: 694px;
+    width: 100vw;
+    z-index: -1;
   }
 
   .program__wrapper {
