@@ -1,99 +1,100 @@
 .main-header {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    margin-top: 13px;
-    margin-bottom: 13px;
-  }
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
 
-  .main-header::before {
-    position: absolute;
-    content: "";
-    background-color:  #D9D9D9;
-    width: 100vw;
-    height: 1px;
-    left: calc((100vw - 100%) / -2);
-    bottom: -13px;
-  }
+.main-header::before {
+  position: absolute;
+  content: "";
+  background-color: #d9d9d9;
+  width: 100vw;
+  height: 1px;
+  left: calc((100vw - 100%) / -2);
+  bottom: -13px;
+}
 
-  .main-header--nojs {
-    flex-wrap: wrap;
-    & .main-header__toggle {
-      display: none;
-    }
-    & .main-header__menu {
-      position: relative;
-      top: 0;
-      display: block
-    }
-  }
+.main-header--nojs {
+  flex-wrap: wrap;
 
-  .main-header__toggle {
-    padding: 0;
-    border: none;
-    background-color: transparent;
-    position: absolute;
-    right: 0px;
-    cursor: pointer;
-    margin-right: 20px;
-    padding-top: 7px;
-  }
-
-  .main-header__menu {
-    position: absolute;
-    top: 52px;
-    right: 0px;
-    z-index: 1;
-    background: #FFFFFF;
-    width: 100%;
-  }
-
-  .main-header__menu-closed {
+  & .main-header__toggle {
     display: none;
   }
 
-  .main-header__menu-opened {
+  & .main-header__menu {
+    position: relative;
+    top: 0;
     display: block;
   }
+}
 
-  .main-header__list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
+.main-header__toggle {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+  margin-right: 20px;
+  padding-top: 7px;
+}
 
-  .main-header__item {
-    position: relative;
-    padding: 21px;
-  }
+.main-header__menu {
+  position: absolute;
+  top: 52px;
+  right: 0;
+  z-index: 1;
+  background: #ffffff;
+  width: 100%;
+}
 
-  .main-header__item::after {
-    position: absolute;
-    content: "";
-    width: 320px;
-    height: 1px;
-    background-color: #E6E6E6;
-    bottom: 0;
-    left: 0;
-  }
+.main-header__menu-closed {
+  display: none;
+}
 
-  .main-header__link {
-    font-family: "Oswald", Arial, sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 20px;
-    color: #000000;
-    text-decoration: none;
-    text-transform: uppercase;
-  }
+.main-header__menu-opened {
+  display: block;
+}
 
-  .main-header__logo {
-    margin-left: 20px;
-  }
+.main-header__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.main-header__item {
+  position: relative;
+  padding: 21px;
+}
+
+.main-header__item::after {
+  position: absolute;
+  content: "";
+  width: 320px;
+  height: 1px;
+  background-color: #e6e6e6;
+  bottom: 0;
+  left: 0;
+}
+
+.main-header__link {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.main-header__logo {
+  margin-left: 20px;
+}
 
 @media (min-width: @tabletop-width) {
-
   .main-header {
     margin: 25px 30px 0 30px;
     justify-content: start;
@@ -136,7 +137,7 @@
     list-style-type: none;
     display: flex;
     gap: 33px;
-    font-family: "Oswald", Arial, sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 24px;
@@ -163,7 +164,7 @@
 
   .main-header__item--current {
     text-decoration: underline;
-    text-decoration-color: #68B738;
+    text-decoration-color: #68b738;
     text-underline-offset: 10px;
   }
 
@@ -174,11 +175,9 @@
   .main-header__link:active {
     opacity: 60%;
   }
-
 }
 
 @media (min-width: @desktop-width) {
-
   .main-header {
     margin: 55px 110px 0 110px;
     justify-content: space-between;
@@ -207,7 +206,7 @@
     display: flex;
     gap: 33px;
     color: #ffffff;
-    font-family: "Oswald", Arial, sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
@@ -217,14 +216,14 @@
 
   .main-header__item--current {
     text-decoration: underline;
-    text-decoration-color: #FFFFFF;
+    text-decoration-color: #ffffff;
     text-underline-offset: 10px;
   }
 
   .main-header__link {
     color: #ffffff;
     text-decoration: none;
-    font-family: Oswald;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
@@ -237,5 +236,4 @@
   .main-header__link:active {
     opacity: 60%;
   }
-
 }

@@ -4,14 +4,14 @@
 
 .additionally__title {
   position: relative;
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 26px;
   margin: 0;
   padding: 0;
   margin-bottom: 34px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   width: 162px;
 }
 
@@ -20,7 +20,7 @@
   content: "";
   width: 100vw;
   height: 2px;
-  background-color: #68B738;
+  background-color: #68b738;
   left: 50%;
   top: 18px;
   z-index: -1;
@@ -38,7 +38,7 @@
 }
 
 .checkbox-block__label {
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -55,26 +55,26 @@
   position: relative;
   width: 30px;
   height: 30px;
-  border: 1px solid #CDCDCD;
+  border: 1px solid #cdcdcd;
   margin-right: 15px;
 }
 
 .checkbox-block__mark:hover {
-  border: 1px solid #BABABA;
+  border: 1px solid #bababa;
 }
 
-.checkbox-block__input:checked+.checkbox-block__mark::before{
+.checkbox-block__input:checked + .checkbox-block__mark::before {
   width: 24px;
   height: 19px;
   position: absolute;
   content: "";
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   background-image: url("../img/checkbox.svg");
 }
 
-.checkbox-block__input:disabled + .checkbox-block__mark + .checkbox-block__label{
+.checkbox-block__input:disabled + .checkbox-block__mark + .checkbox-block__label {
   opacity: 30%;
   pointer-events: none;
 }
@@ -86,14 +86,14 @@
 .additionally__button {
   display: block;
   text-decoration: none;
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   text-align: center;
-  color: #FFFFFF;
-  padding: 10px 0px 10px 0px;
-  background: #68B738;
+  color: #ffffff;
+  padding: 10px 0 10px 0;
+  background: #68b738;
   width: 280px;
   margin: 0 auto;
   text-transform: uppercase;
@@ -102,25 +102,24 @@
 }
 
 .additionally__button:hover {
-  background-color: #5EAA2F;
+  background-color: #5eaa2f;
 }
 
 .additionally__button:active {
-  background-color: #5EAA2F;
-  color:rgba(255, 255, 255, 0.3)
+  background-color: #5eaa2f;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .additionally__important {
   display: flex;
   justify-content: center;
-  font-family: "Lato", Arial, sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 16px;
 }
 
 @media (min-width: @tabletop-width) {
-
   .additionally__wrapper {
     position: relative;
     margin: 0 30px 60px 30px;
@@ -128,7 +127,7 @@
 
   .additionally__title {
     position: static;
-    font-family: "Oswald", Arial, sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 36px;
     font-weight: 400;
     line-height: 36px;
@@ -159,7 +158,7 @@
   }
 
   .checkbox-block__label {
-    font-family: "Oswald", Arial, sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
@@ -175,31 +174,26 @@
     position: relative;
     width: 40px;
     height: 40px;
-    border: 1px solid #CDCDCD;
+    border: 1px solid #cdcdcd;
     margin-right: 20px;
-  }
-
-  .checkbox-block__input:disabled + .checkbox-block__mark + .checkbox-block__label{
-    opacity: 30%;
-    pointer-events: none;
   }
 
   .checkbox-block__input:focus + .checkbox-block__mark {
     outline: 2px solid #444444;
   }
 
-  .checkbox-block__input:checked+.checkbox-block__mark::before{
+  .checkbox-block__input:checked + .checkbox-block__mark::before {
     width: 24px;
     height: 19px;
     position: absolute;
     content: "";
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background-image: url("../img/checkbox.svg");
   }
 
-  .checkbox-block__input:disabled + .checkbox-block__mark + .checkbox-block__label{
+  .checkbox-block__input:disabled + .checkbox-block__mark + .checkbox-block__label {
     opacity: 30%;
     pointer-events: none;
   }
@@ -212,13 +206,13 @@
   .additionally__button {
     width: 284px;
     padding: 14px 65px;
-    background: #68B738;
-    font-family: "Oswald", Arial, sans-serif;
+    background: #68b738;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 26px;
     text-align: center;
-    color: #FFFFFF;
+    color: #ffffff;
     text-transform: uppercase;
     border: none;
     cursor: pointer;
@@ -227,23 +221,21 @@
   }
 
   .additionally__important {
-    font-family: "Lato", Arial, sans-serif;
+    font-family: "Lato", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 16px;
     align-items: center;
   }
-
 }
 
 @media (min-width: @desktop-width) {
-
   .additionally__wrapper {
     margin: 0 110px 79px 70px;
   }
 
   .additionally__title {
-    font-family: "Oswald", Arial, sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 36px;
     font-weight: 400;
     line-height: 36px;
@@ -264,7 +256,7 @@
   }
 
   .checkbox-block__label {
-    font-family: "Oswald", Arial, sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
@@ -281,26 +273,26 @@
     position: relative;
     width: 40px;
     height: 40px;
-    border: 1px solid #CDCDCD;
+    border: 1px solid #cdcdcd;
     margin-right: 20px;
   }
 
   .checkbox-block__mark:hover {
-    border: 1px solid #BABABA;
+    border: 1px solid #bababa;
   }
 
-  .checkbox-block__input:checked+.checkbox-block__mark::before{
+  .checkbox-block__input:checked + .checkbox-block__mark::before {
     width: 24px;
     height: 19px;
     position: absolute;
     content: "";
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     background-image: url("../img/checkbox.svg");
   }
 
-  .checkbox-block__input:disabled + .checkbox-block__mark + .checkbox-block__label{
+  .checkbox-block__input:disabled + .checkbox-block__mark + .checkbox-block__label {
     opacity: 30%;
     pointer-events: none;
   }
@@ -314,36 +306,35 @@
   }
 
   .additionally__button {
-  width:570px;
-  padding: 14px 188px 14px 188px;
-  background: #68B738;
-  font-family: "Oswald", Arial, sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 26px;
-  text-align: center;
-  color: #FFFFFF;
-  text-transform: uppercase;
-  border: none;
-  cursor: pointer;
-  margin-right: 80px;
+    width: 570px;
+    padding: 14px 188px 14px 188px;
+    background: #68b738;
+    font-family: "Oswald", "Arial", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    margin-right: 80px;
   }
 
   .additionally__button:hover {
-    background-color: #5EAA2F;
+    background-color: #5eaa2f;
   }
 
   .additionally__button:active {
-    background-color: #5EAA2F;
-    color:rgba(255, 255, 255, 0.3)
+    background-color: #5eaa2f;
+    color: rgba(255, 255, 255, 0.3);
   }
 
   .additionally__important {
-    font-family: "Lato", Arial, sans-serif;
+    font-family: "Lato", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 16px;
     align-items: center;
   }
-
 }

@@ -3,7 +3,7 @@
 }
 
 .selection__title {
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
@@ -13,7 +13,7 @@
 }
 
 .selection__description {
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -42,13 +42,13 @@
 }
 
 .input-block {
-  &+.input-block__field--error+.contacts__image {
-    stroke: #FF8282;
+  & + .input-block__field--error + .contacts__image {
+    stroke: #ff8282;
   }
 }
 
 .input-block__label {
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -60,8 +60,8 @@
 .input-block__field {
   width: 228px;
   height: 45px;
-  border: 1px solid #E7E7E7;
-  font-family: "Oswald", Arial, sans-serif;
+  border: 1px solid #e7e7e7;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -70,7 +70,7 @@
 }
 
 .input-block__field:hover {
-  outline: 1px solid #CDCDCD;
+  outline: 1px solid #cdcdcd;
 }
 
 .input-block__field:focus {
@@ -80,8 +80,8 @@
 .input-block__field--contacts {
   width: 228px;
   height: 45px;
-  border: 1px solid #E7E7E7;
-  font-family: "Oswald", Arial, sans-serif;
+  border: 1px solid #e7e7e7;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -90,7 +90,7 @@
 }
 
 .input-block__field--error {
-  outline: 1px solid #FF8282;
+  outline: 1px solid #ff8282;
 }
 
 .selection__food {
@@ -104,7 +104,7 @@
   content: "";
   width: 100vw;
   height: 1px;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   left: calc((100vw - 100%) / -2);
   top: 2px;
 }
@@ -114,13 +114,13 @@
   content: "";
   width: 100vw;
   height: 1px;
-  background-color: #D9D9D9;
+  background-color: #d9d9d9;
   left: calc((100vw - 100%) / -2);
   bottom: -20px;
 }
 
 .radio-block__label {
-  font-family: "Oswald", Arial, sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
@@ -141,28 +141,28 @@
   position: relative;
   width: 30px;
   height: 30px;
-  border: 1px solid #CDCDCD;
+  border: 1px solid #cdcdcd;
   border-radius: 50%;
   margin-right: 15px;
 }
 
-.radio-block__input:checked+.radio-block__mark::before{
+.radio-block__input:checked + .radio-block__mark::before {
   width: 13px;
   height: 13px;
   border-radius: 50%;
-  background-color: #68B738;
+  background-color: #68b738;
   content: "";
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
 }
 
 .radio-block__mark:hover {
-  outline: 1px solid #BABABA;
+  outline: 1px solid #bababa;
 }
 
-.radio-block__input:disabled + .radio-block__mark + .radio-block__label{
+.radio-block__input:disabled + .radio-block__mark + .radio-block__label {
   opacity: 30%;
   pointer-events: none;
 }
@@ -172,23 +172,21 @@
 }
 
 @media (min-width: @tabletop-width) {
-
   .selection__wrapper {
     margin: 0 30px 65px 70px;
   }
 
   .selection__title {
-    font-family: "Oswald", Arial, sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 60px;
     font-weight: 400;
     line-height: 60px;
-    margin: 0;
     padding: 0;
     margin: 60px 0 54px 0;
   }
 
   .selection__description {
-    font-family: "Oswald", Arial, sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
@@ -221,7 +219,7 @@
   }
 
   .input-block__label {
-    font-family: "Oswald", Arial, sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
@@ -230,8 +228,8 @@
   .input-block__field {
     width: 568px;
     height: 52px;
-    border: 1px solid #E7E7E7;
-    font-family: "Oswald", Arial, sans-serif;
+    border: 1px solid #e7e7e7;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
@@ -244,7 +242,7 @@
     min-height: 196px;
     padding: 0;
     padding-top: 10px;
-    border: 1px solid #E7E7E7;
+    border: 1px solid #e7e7e7;
   }
 
   .selection__food::before {
@@ -256,7 +254,7 @@
   }
 
   .radio-block__label {
-    font-family: "Oswald", Arial, sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
@@ -276,42 +274,40 @@
     position: relative;
     width: 40px;
     height: 40px;
-    border: 1px solid #CDCDCD;
+    border: 1px solid #cdcdcd;
     border-radius: 50%;
     margin-right: 20px;
   }
 
-  .radio-block__input:checked+.radio-block__mark::before{
+  .radio-block__input:checked + .radio-block__mark::before {
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    background-color: #68B738;
+    background-color: #68b738;
     content: "";
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
   }
 
   .radio-block__mark:hover {
-    outline: 1px solid #BABABA;
+    outline: 1px solid #bababa;
   }
 
-  .radio-block__input:disabled + .radio-block__mark + .radio-block__label{
+  .radio-block__input:disabled + .radio-block__mark + .radio-block__label {
     opacity: 30%;
     pointer-events: none;
   }
-
 }
 
 @media (min-width: @desktop-width) {
-
   .selection__wrapper {
     margin: 68px 110px 70px 110px;
   }
 
   .selection__title {
-    font-family: "Oswald", Arial, sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 60px;
     font-weight: 400;
     line-height: 60px;
@@ -321,7 +317,7 @@
   }
 
   .selection__description {
-    font-family: "Oswald", Arial, sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
@@ -367,7 +363,7 @@
   }
 
   .input-block__label {
-    font-family: "Oswald", Arial, sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
@@ -379,8 +375,8 @@
   .input-block__field {
     width: 510px;
     height: 52px;
-    border: 1px solid #E7E7E7;
-    font-family: "Oswald", Arial, sans-serif;
+    border: 1px solid #e7e7e7;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
@@ -389,7 +385,7 @@
   }
 
   .input-block__field:hover {
-    outline: 1px solid #CDCDCD;
+    outline: 1px solid #cdcdcd;
   }
 
   .input-block__field:focus {
@@ -400,11 +396,11 @@
     display: block;
     width: 570px;
     min-height: 196px;
-    border: 1px solid #E7E7E7;
+    border: 1px solid #e7e7e7;
   }
 
   .radio-block__label {
-    font-family: "Oswald", Arial, sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
@@ -426,21 +422,20 @@
     position: relative;
     width: 40px;
     height: 40px;
-    border: 1px solid #CDCDCD;
+    border: 1px solid #cdcdcd;
     border-radius: 50%;
     margin-right: 20px;
   }
 
-  .radio-block__input:checked+.radio-block__mark::before{
+  .radio-block__input:checked + .radio-block__mark::before {
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    background-color: #68B738;
+    background-color: #68b738;
     content: "";
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
   }
-
 }
