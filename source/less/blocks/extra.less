@@ -3,6 +3,7 @@
 }
 
 .extra__title {
+  position: relative;
   font-family: "Oswald", Arial, sans-serif;
   font-size: 24px;
   font-weight: 400;
@@ -10,6 +11,19 @@
   margin: 0;
   padding: 0;
   margin-bottom: 49px;
+  background-color: #FFFFFF;
+  width: 245px;
+}
+
+.extra__title::before {
+  position: absolute;
+  content: "";
+  background-color:  #68B738;
+  width: 100vw;
+  height: 2px;
+  left: 50%;
+  top: 15px;
+  z-index: -1;
 }
 
 .extra__list {
@@ -19,7 +33,17 @@
 }
 
 .extra__item {
+  position: relative;
   margin-bottom: 31px;
+}
+
+.extra__item::before {
+  position: absolute;
+  content: "";
+  background-color:  #EBEBEB;
+  width: 280px;
+  height: 1px;
+  top: -14px;
 }
 
 .extra__name {
@@ -58,6 +82,7 @@
 }
 
 .extra__button {
+  position: relative;
   display: block;
   text-decoration: none;
   font-family: "Oswald", Arial, sans-serif;
@@ -71,6 +96,25 @@
   width: 280px;
   margin: 0 auto;
   text-transform: uppercase;
+}
+
+.extra__button::before {
+  position: absolute;
+  content: "";
+  background-color:  #EBEBEB;
+  width: 280px;
+  height: 1px;
+  bottom: -18px;
+  left: 0;
+}
+
+.extra__button:hover {
+  background-color: #5EAA2F;
+}
+
+.extra__button:active {
+  background-color: #5EAA2F;
+  color:rgba(255, 255, 255, 0.3)
 }
 
 .extra__item:last-child {
@@ -120,9 +164,11 @@
 
   .extra__wrapper {
     margin: 0 30px 75px 30px;
+    position: relative;
   }
 
   .extra__title {
+    position: static;
     font-family: "Oswald", Arial, sans-serif;
     font-size: 36px;
     font-weight: 400;
@@ -130,7 +176,19 @@
     margin: 0;
     padding: 0;
     margin-bottom: 108px;
-    margin-left: 40px;
+    padding-left: 40px;
+    width: 418px;
+  }
+
+  .extra__title::before {
+    position: absolute;
+    content: "";
+    background-color: #68B738;
+    width: 100vw;
+    height: 2px;
+    left: calc((100vw - 100%) / -2);
+    top: 22px;
+    z-index: -1;
   }
 
   .extra__table {
@@ -151,6 +209,16 @@
     width: 632px;
     min-height: 85px;
     margin: 28px 0 53px;
+  }
+
+  .extra__item::before {
+    width: 707px;
+    min-height: 138px;
+    outline: 1px solid #CDCDCD;
+    background-color: #FFFFFF;
+    z-index: -1;
+    margin-left: -38px;
+    margin-top: -12px;
   }
 
   .extra__item:last-child {
@@ -197,13 +265,10 @@
   }
 
   .extra__button {
+    position: static;
     width: 632px;
     height: 40px;
-    top: 15px;
-    left: 651px;
     padding: 10px 0px 10px 0px;
-    gap: 0px;
-    opacity: 0px;
     text-decoration: none;
     background: #68B738;
     font-family: "Oswald", Arial, sans-serif;
@@ -213,6 +278,10 @@
     text-align: center;
     color: #FFFFFF;
     text-transform: uppercase;
+  }
+
+  .extra__button::before {
+    display: none;
   }
 
   .extra__button:hover {
@@ -281,6 +350,8 @@
     margin: 0;
     padding: 0;
     margin-bottom: 80px;
+    padding-left: 40px;
+    margin-left: -40px;
   }
 
   .extra__table {
@@ -299,6 +370,16 @@
     grid-template-columns: 651px 245px;
     min-height: 40px;
     margin: 27px 0;
+  }
+
+  .extra__item::before {
+    width: 895px;
+    min-height: 1px;
+    margin: 0;
+    background-color: #CDCDCD;
+    z-index: -1;
+    top: -30px;
+    outline: none;
   }
 
   .extra__total {
@@ -341,6 +422,7 @@
   }
 
   .extra__button {
+    position: relative;
     width: 244px;
     height: 40px;
     padding: 10px 0px 10px 0px;
@@ -354,6 +436,17 @@
     color: #FFFFFF;
     text-transform: uppercase;
     margin-top: -9px;
+  }
+
+  .extra__button::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 895px;
+    height: 1px;
+    background-color: #CDCDCD;
+    bottom: -12px;
+    left: -650px;
   }
 
   .extra__item:last-child {

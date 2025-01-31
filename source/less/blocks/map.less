@@ -45,15 +45,19 @@
 }
 
 .map__iframe {
+  position: relative;
   display: block;
   border: none;
-  width: 320px;
+  left: calc((100vw - 100%) / -2);
+  top: 0;
   height: 362px;
+  width: 100vw;
 }
 
 @media (min-width: @tabletop-width) {
 
   .map__wrapper {
+    position: relative;
     padding: 0;
     margin: 0;
   }
@@ -110,10 +114,14 @@
   }
 
   .map__iframe {
+    position: relative;
     display: block;
     border: none;
-    width: 768px;
+    content: '';
+    left: calc((100vw - 100%) / -2);
+    top: 0;
     height: 400px;
+    width: 100vw;
   }
 
 }
@@ -181,8 +189,6 @@
     position: absolute;
     display: block;
     border: none;
-    width: 1440px;
-    height: 400px;
   }
 
 }

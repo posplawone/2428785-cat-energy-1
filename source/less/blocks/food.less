@@ -43,11 +43,21 @@
 }
 
 .food__description {
+  position: relative;
   margin: 0 33px 38px 20px;
   font-family: "Lato", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+}
+
+.food__description::before {
+  position: absolute;
+  content: "";
+  background-color:  #D9D9D9;
+  width: 240px;
+  height: 1px;
+  top: 112px;
 }
 
 .food__image-slimming {
@@ -67,6 +77,12 @@
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.food__catalog:hover {
+  & .food__link {
+    width: 32px;
+  }
 }
 
 .food__link {
@@ -111,6 +127,10 @@
     font-size: 16px;
     line-height: 24px;
     width: 335px;
+  }
+
+  .food__description::before {
+    display: none;
   }
 
   .food__image-slimming {

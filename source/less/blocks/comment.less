@@ -3,10 +3,25 @@
 }
 
 .comment__title {
+  position: relative;
   font-family: "Oswald", Arial, sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 26px;
+  background-color: #FFFFFF;
+  width: 140px;
+  display: block;
+}
+
+.comment__title::before {
+  position: absolute;
+  content: "";
+  width: 100vw;
+  height: 2px;
+  background-color: #68B738;
+  left: 50%;
+  top: 16px;
+  z-index: -1;
 }
 
 .comment__message {
@@ -14,6 +29,7 @@
   height: 150px;
   margin: 0;
   padding: 0;
+  border: 1px solid #E7E7E7;
   resize: none;
   font-family: "Oswald", Arial, sans-serif;
   font-size: 16px;
@@ -23,29 +39,43 @@
   margin-top: 36px;
   padding: 14px;
   text-transform: uppercase;
-}
 
-.comment__message:focus {
+  &:hover {
+  outline: 2px solid #CDCDCD;
+  }
+
+  &:focus {
   outline: 2px solid #444444;
+  }
 }
 
 @media (min-width: @tabletop-width) {
 
   .comment__wrapper {
-    margin: 0 30px 62px 70px;
+    position: relative;
+    margin: 0 30px 62px 30px;
   }
 
   .comment__title {
+    position: static;
     font-family: "Oswald", Arial, sans-serif;
     font-size: 36px;
     font-weight: 400;
     line-height: 36px;
+    width: 262px;
+    padding-left: 40px;
+  }
+
+  .comment__title::before {
+    top: 22px;
+    left: calc((100vw - 100%) / -2);
   }
 
   .comment__message {
     width: 628px;
     height: 175px;
-    margin-top: 82px;
+    margin-top: 88px;
+    margin-left: 40px;
     padding: 11px 20px;
     resize: none;
     font-family: "Oswald", Arial, sans-serif;
@@ -60,7 +90,7 @@
 @media (min-width: @desktop-width) {
 
   .comment__wrapper {
-    margin: 0 110px 65px 110px;
+    margin: 0 110px 65px 70px;
   }
 
   .comment__title {

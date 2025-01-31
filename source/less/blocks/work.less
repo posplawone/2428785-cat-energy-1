@@ -59,6 +59,7 @@
   }
 
   .work__list {
+    position: relative;
     display: grid;
     grid-template-columns: 346px 230px;
     counter-reset: workCounter;
@@ -66,6 +67,17 @@
     padding: 0;
     gap: 37px;
     margin: 0;
+  }
+
+  .work__list::before {
+    position: absolute;
+    content: "";
+    background-color:  #E6E6E6;
+    width: 100vw;
+    height: 1px;
+    left: calc((100vw - 100%) / -2);
+    bottom: -48px;
+    right: -30px;
   }
 
   .work__item {
@@ -140,6 +152,10 @@
     padding: 0;
     gap: 94px;
     margin: 0;
+  }
+
+  .work__list::before {
+    display: none;
   }
 
   .work__item {

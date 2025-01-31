@@ -1,7 +1,18 @@
 .product {
+  position: relative;
   width: 320px;
   min-height: 209px;
   margin: 0;
+}
+
+.product::before {
+  position: absolute;
+  content: "";
+  background-color:  #EBEBEB;
+  width: 100vw;
+  height: 1px;
+  left: calc((100vw - 100%) / -2);
+  top: -22px;
 }
 
 .product__card {
@@ -94,10 +105,30 @@
   text-transform: uppercase;
 }
 
+.product__button:hover {
+  background-color: #5EAA2F;
+}
+
+.product__button:active {
+  background-color: #5EAA2F;
+  color:rgba(255, 255, 255, 0.3)
+}
+
 .product-more {
+  position: relative;
   display: flex;
   flex-flow: column;
   width: 280px;
+}
+
+.product-more::before {
+  position: absolute;
+  content: "";
+  background-color:  #EBEBEB;
+  width: 100vw;
+  height: 1px;
+  left: calc((100vw - 100%) / -2);
+  top: -22px;
 }
 
 .product-more__image {
@@ -148,10 +179,39 @@
   text-transform: uppercase;
 }
 
+.product-more__button::before {
+  position: absolute;
+  content: "";
+  background-color:  #EBEBEB;
+  width: 100vw;
+  height: 1px;
+  left: calc((100vw - 100%) / -2);
+  bottom: -25px;
+}
+
+.product-more__button:hover {
+  background-color: #EBEBEB;
+}
+
+.product-more__button:active {
+  background-color: #EBEBEB;
+  color: rgba(68, 68, 68, 1);
+}
+
 @media (min-width: @tabletop-width) {
 
   .product {
     margin-bottom: 0;
+  }
+
+  .product::before {
+    position: absolute;
+    content: "";
+    background-color: #EBEBEB;
+    width: 324px;
+    height: 1px;
+    left: 0;
+    top: 82px;
   }
 
   .product__card {
@@ -212,10 +272,20 @@
   }
 
   .product__category {
+    position: relative;
     font-family: "Lato", Arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
+  }
+
+  .product__category::before {
+    position: absolute;
+    content: "";
+    background-color: #CDCDCD;
+    width: 250px;
+    height: 1px;
+    bottom: -6px;
   }
 
   .product__value {
@@ -300,6 +370,12 @@
     margin-bottom: 0;
   }
 
+  .product::before {
+    width: 245px;
+    top: 64px;
+    min-height: 430px;
+  }
+
   .product__card {
     display: block;
   }
@@ -374,6 +450,10 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;
+  }
+
+  .product__category::before {
+    width: 169px;
   }
 
   .product__value {
