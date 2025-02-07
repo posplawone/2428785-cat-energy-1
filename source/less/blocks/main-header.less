@@ -2,8 +2,8 @@
   display: flex;
   position: relative;
   justify-content: space-between;
-  margin-top: 13px;
-  margin-bottom: 13px;
+  width: 320px;
+  margin: 13px auto;
 }
 
 .main-header::before {
@@ -17,13 +17,13 @@
 }
 
 .main-header--nojs {
-  flex-wrap: wrap;
+  flex-flow: column;
 
-  & .main-header__toggle {
+  .main-header__toggle {
     display: none;
   }
 
-  & .main-header__menu {
+  .main-header__menu {
     position: relative;
     top: 0;
     display: block;
@@ -96,9 +96,9 @@
 
 @media (min-width: @tabletop-width) {
   .main-header {
-    margin: 25px 30px 0 30px;
-    justify-content: start;
-    gap: 94px;
+    width: 704px;
+    margin: 25px auto 0;
+    justify-content: space-between;
     align-items: center;
   }
 
@@ -179,7 +179,8 @@
 
 @media (min-width: @desktop-width) {
   .main-header {
-    margin: 55px 110px 0 110px;
+    width: 1220px;
+    margin: 55px auto 0;
     justify-content: space-between;
     align-items: center;
   }

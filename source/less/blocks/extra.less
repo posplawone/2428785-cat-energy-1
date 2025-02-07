@@ -1,5 +1,6 @@
 .extra__wrapper {
-  margin: 0 20px 35px 20px;
+  width: 320px;
+  margin: 0 auto 35px;
 }
 
 .extra__title {
@@ -9,8 +10,9 @@
   font-weight: 400;
   line-height: 24px;
   margin: 0;
+  margin-left: 20px;
   padding: 0;
-  margin-bottom: 49px;
+  margin-bottom: 51px;
   background-color: #ffffff;
   width: 245px;
 }
@@ -34,7 +36,8 @@
 
 .extra__item {
   position: relative;
-  margin-bottom: 31px;
+  width: 280px;
+  margin: 0 auto 31px;
 }
 
 .extra__item::before {
@@ -55,6 +58,7 @@
   margin: 0;
   padding: 0;
   margin-bottom: 13px;
+  color: #222222;
 }
 
 .extra__card {
@@ -70,6 +74,7 @@
   line-height: 14px;
   margin: 0;
   padding: 0;
+  color: #444444;
 }
 
 .extra__price {
@@ -79,6 +84,7 @@
   line-height: 14px;
   margin: 0;
   padding: 0;
+  color: #444444;
 }
 
 .extra__button {
@@ -129,6 +135,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -2;
+  margin: 0 auto;
 }
 
 .extra__gift::before {
@@ -162,7 +169,8 @@
 
 @media (min-width: @tabletop-width) {
   .extra__wrapper {
-    margin: 0 30px 75px 30px;
+    width: 708px;
+    margin: 0 auto 75px;
     position: relative;
   }
 
@@ -336,7 +344,8 @@
 
 @media (min-width: @desktop-width) {
   .extra__wrapper {
-    margin: 0 110px 87px 110px;
+    width: 1220px;
+    margin: 0 auto 90px;
   }
 
   .extra__title {
@@ -346,9 +355,13 @@
     line-height: 36px;
     margin: 0;
     padding: 0;
-    margin-bottom: 80px;
+    margin-bottom: 76px;
     padding-left: 40px;
     margin-left: -40px;
+  }
+
+  .extra__goods {
+    display: flex;
   }
 
   .extra__table {
@@ -363,6 +376,7 @@
   }
 
   .extra__item {
+    position: relative;
     display: grid;
     grid-template-columns: 651px 245px;
     min-height: 40px;
@@ -375,8 +389,20 @@
     margin: 0;
     background-color: #cdcdcd;
     z-index: -1;
-    top: -30px;
+    top: -26px;
     outline: none;
+  }
+
+  .extra__item::after {
+    position: absolute;
+    content: "";
+    width: 895px;
+    min-height: 1px;
+    margin: 0;
+    background-color: #cdcdcd;
+    z-index: -1;
+    outline: none;
+    bottom: -2px;
   }
 
   .extra__total {
@@ -435,17 +461,6 @@
     margin-top: -9px;
   }
 
-  .extra__button::before {
-    position: absolute;
-    display: block;
-    content: "";
-    width: 895px;
-    height: 1px;
-    background-color: #cdcdcd;
-    bottom: -12px;
-    left: -650px;
-  }
-
   .extra__item:last-child {
     margin-bottom: 0;
   }
@@ -474,13 +489,13 @@
   .extra__image {
     position: absolute;
     left: 84px;
-    top: 56px;
+    top: 58px;
   }
 
   .extra__description {
     position: absolute;
     right: 40px;
-    top: 186px;
+    top: 188px;
     margin: 0 auto;
     padding: 0;
     font-family: "Lato", "Arial", sans-serif;

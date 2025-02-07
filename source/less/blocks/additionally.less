@@ -1,5 +1,6 @@
 .additionally__wrapper {
-  margin: 0 20px 32px 20px;
+  width: 320px;
+  margin: 0 auto 32px;
 }
 
 .additionally__title {
@@ -8,11 +9,10 @@
   font-size: 24px;
   font-weight: 400;
   line-height: 26px;
-  margin: 0;
   padding: 0;
-  margin-bottom: 34px;
   background-color: #ffffff;
   width: 162px;
+  margin: 0 0 34px 20px;
 }
 
 .additionally__title::before {
@@ -22,65 +22,18 @@
   height: 2px;
   background-color: #68b738;
   left: 50%;
-  top: 18px;
+  top: 15px;
   z-index: -1;
 }
 
 .additionally__list {
-  margin: 0;
+  margin: 0 0 34px 20px;
   padding: 0;
   list-style-type: none;
-  margin-bottom: 34px;
 }
 
 .additionally__item {
   margin-bottom: 12px;
-}
-
-.checkbox-block__label {
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18px;
-  text-transform: uppercase;
-}
-
-.checkbox-block__control {
-  display: flex;
-  cursor: pointer;
-  align-items: center;
-}
-
-.checkbox-block__mark {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  border: 1px solid #cdcdcd;
-  margin-right: 15px;
-}
-
-.checkbox-block__mark:hover {
-  border: 1px solid #bababa;
-}
-
-.checkbox-block__input:checked + .checkbox-block__mark::before {
-  width: 24px;
-  height: 19px;
-  position: absolute;
-  content: "";
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background-image: url("../img/checkbox.svg");
-}
-
-.checkbox-block__input:disabled + .checkbox-block__mark + .checkbox-block__label {
-  opacity: 30%;
-  pointer-events: none;
-}
-
-.checkbox-block__input:focus + .checkbox-block__mark {
-  outline: 2px solid #444444;
 }
 
 .additionally__button {
@@ -122,7 +75,8 @@
 @media (min-width: @tabletop-width) {
   .additionally__wrapper {
     position: relative;
-    margin: 0 30px 60px 30px;
+    width: 708px;
+    margin: 0 auto 60px;
   }
 
   .additionally__title {
@@ -155,47 +109,6 @@
 
   .additionally__item {
     margin-bottom: 32px;
-  }
-
-  .checkbox-block__label {
-    font-family: "Oswald", "Arial", sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    text-transform: uppercase;
-  }
-
-  .checkbox-block__control {
-    display: flex;
-    cursor: pointer;
-  }
-
-  .checkbox-block__mark {
-    position: relative;
-    width: 40px;
-    height: 40px;
-    border: 1px solid #cdcdcd;
-    margin-right: 20px;
-  }
-
-  .checkbox-block__input:focus + .checkbox-block__mark {
-    outline: 2px solid #444444;
-  }
-
-  .checkbox-block__input:checked + .checkbox-block__mark::before {
-    width: 24px;
-    height: 19px;
-    position: absolute;
-    content: "";
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background-image: url("../img/checkbox.svg");
-  }
-
-  .checkbox-block__input:disabled + .checkbox-block__mark + .checkbox-block__label {
-    opacity: 30%;
-    pointer-events: none;
   }
 
   .additionally__submit {
@@ -231,7 +144,8 @@
 
 @media (min-width: @desktop-width) {
   .additionally__wrapper {
-    margin: 0 110px 79px 70px;
+    width: 1220px;
+    margin: 0 auto 79px;
   }
 
   .additionally__title {
@@ -241,8 +155,9 @@
     line-height: 36px;
     margin: 0;
     padding: 0;
-    margin-bottom: 57px;
+    margin-bottom: 56px;
     padding-left: 40px;
+    margin-left: -40px;
   }
 
   .additionally__list {
@@ -252,57 +167,11 @@
     padding: 0;
     list-style-type: none;
     margin-bottom: 28px;
-    margin-left: 40px;
-  }
-
-  .checkbox-block__label {
-    font-family: "Oswald", "Arial", sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 30px;
-    text-transform: uppercase;
-    margin-top: 5px;
-  }
-
-  .checkbox-block__control {
-    display: flex;
-    cursor: pointer;
-  }
-
-  .checkbox-block__mark {
-    position: relative;
-    width: 40px;
-    height: 40px;
-    border: 1px solid #cdcdcd;
-    margin-right: 20px;
-  }
-
-  .checkbox-block__mark:hover {
-    border: 1px solid #bababa;
-  }
-
-  .checkbox-block__input:checked + .checkbox-block__mark::before {
-    width: 24px;
-    height: 19px;
-    position: absolute;
-    content: "";
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background-image: url("../img/checkbox.svg");
-  }
-
-  .checkbox-block__input:disabled + .checkbox-block__mark + .checkbox-block__label {
-    opacity: 30%;
-    pointer-events: none;
-  }
-
-  .checkbox-block__input:focus + .checkbox-block__mark {
-    outline: 2px solid #444444;
   }
 
   .additionally__submit {
     display: flex;
+    margin: 0;
   }
 
   .additionally__button {

@@ -163,6 +163,5 @@ export const build = gulp.series(
     watcher,
     svg,
     sprite
-  ),
-  server
+  )
 );

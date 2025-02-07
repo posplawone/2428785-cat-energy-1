@@ -1,5 +1,6 @@
 .comment__wrapper {
-  margin: 0 20px 18px 20px;
+  width: 320px;
+  margin: 0 auto 18px;
 }
 
 .comment__title {
@@ -11,6 +12,7 @@
   background-color: #ffffff;
   width: 140px;
   display: block;
+  margin-left: 20px;
 }
 
 .comment__title::before {
@@ -35,9 +37,9 @@
   font-weight: 400;
   line-height: 18px;
   color: #444444;
-  margin-top: 36px;
   padding: 14px;
   text-transform: uppercase;
+  margin: 38px 0 0 20px;
 
   &:hover {
     outline: 2px solid #cdcdcd;
@@ -51,7 +53,8 @@
 @media (min-width: @tabletop-width) {
   .comment__wrapper {
     position: relative;
-    margin: 0 30px 62px 30px;
+    width: 708px;
+    margin: 0 auto 60px;
   }
 
   .comment__title {
@@ -62,6 +65,7 @@
     line-height: 36px;
     width: 262px;
     padding-left: 40px;
+    margin-left: 0;
   }
 
   .comment__title::before {
@@ -86,7 +90,8 @@
 
 @media (min-width: @desktop-width) {
   .comment__wrapper {
-    margin: 0 110px 65px 70px;
+    width: 1220px;
+    margin: 0 auto 65px;
   }
 
   .comment__title {
@@ -95,9 +100,11 @@
     font-size: 36px;
     font-weight: 400;
     line-height: 36px;
+    margin-left: -40px;
   }
 
   .comment__message {
+    margin: 0;
     width: 1220px;
     height: 175px;
     resize: none;
