@@ -6,6 +6,8 @@ button.classList.toggle("main-header__toggle--close");
 
 if (button) {
   button.addEventListener("click", () => {
+    button.classList.toggle("main-header__toggle--close");
+
     if (menu.classList.contains("main-header__menu-closed") == true) {
       menu.classList.remove("main-header__menu-closed");
     } else {
