@@ -159,7 +159,6 @@ export const build = gulp.series(
     html,
     scripts,
     styles,
-    watcher,
     svg,
     sprite
   )
