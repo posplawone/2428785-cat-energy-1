@@ -85,6 +85,7 @@
 
 @media (min-width: @tabletop-width) {
   .work__wrapper {
+    position: relative;
     width: 708px;
     margin: 0 auto 52px;
   }
@@ -99,7 +100,6 @@
   }
 
   .work__list {
-    position: relative;
     display: grid;
     grid-template-columns: 346px 230px;
     counter-reset: workCounter;
@@ -116,8 +116,7 @@
     width: 100vw;
     height: 1px;
     left: calc((100vw - 100%) / -2);
-    bottom: -48px;
-    right: -30px;
+    bottom: -8px;
   }
 
   .work__item {

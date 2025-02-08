@@ -2,8 +2,6 @@ let button = document.querySelector(".main-header__toggle");
 let menu = document.querySelector(".main-header__menu");
 let header = document.querySelector(".main-header");
 
-button.classList.toggle("main-header__toggle--close");
-
 if (button) {
   button.addEventListener("click", () => {
     button.classList.toggle("main-header__toggle--close");
