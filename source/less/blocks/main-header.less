@@ -16,8 +16,12 @@
   bottom: -13px;
 }
 
+.main-header--inner .main-header__link {
+  color: #000000;
+}
+
 .main-header--nojs {
-  flex-flow: column;
+  flex-direction: row;
 
   .main-header__toggle {
     display: none;
@@ -30,15 +34,36 @@
   }
 }
 
+.main__header__navigation {
+  position: relative;
+}
+
 .main-header__toggle {
+  position: absolute;
+  content: "";
+  width: 24px;
+  height: 16px;
   padding: 0;
   border: none;
   background-color: transparent;
-  position: absolute;
-  right: 0;
   cursor: pointer;
-  margin-right: 20px;
-  padding-top: 7px;
+  background-image: url("../img/header-toggle.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+
+.main-header__toggle--close {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  background-image: url("../img/header-toggle-close.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
 .main-header__menu {
@@ -185,6 +210,14 @@
     align-items: center;
   }
 
+  .main-header--inner .main-header__link {
+    color: #FFFFFF;
+  }
+
+  .main-header--inner .main-header__item--current {
+    text-decoration-color: #FFFFFF;
+  }
+
   .main-header__logo {
     width: 202px;
     height: 59px;
@@ -217,12 +250,12 @@
 
   .main-header__item--current {
     text-decoration: underline;
-    text-decoration-color: #ffffff;
+    text-decoration-color: #68B738;
     text-underline-offset: 10px;
   }
 
   .main-header__link {
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
     font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;

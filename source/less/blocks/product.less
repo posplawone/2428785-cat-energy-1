@@ -123,90 +123,6 @@
   color: rgba(255, 255, 255, 0.3);
 }
 
-.product-more {
-  position: relative;
-    width: 320px;
-    min-height: 209px;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-}
-
-.product-more::before {
-  position: absolute;
-  content: "";
-  background-color: #ebebeb;
-  width: 100vw;
-  height: 1px;
-  left: calc((100vw - 100%) / -2);
-  top: 0;
-}
-
-.product-more::after {
-  position: absolute;
-  content: "";
-  background-color: #ebebeb;
-  width: 100vw;
-  height: 1px;
-  left: calc((100vw - 100%) / -2);
-  bottom: 0;
-}
-
-.product-more__image {
-  position: absolute;
-  left: 145px;
-  top: 26px;
-}
-
-.product-more__name {
-  display: block;
-  margin: 54px auto 8px;
-  padding: 0;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #111111;
-  text-align: center;
-}
-
-.product-more__show {
-  font-family: "Lato", "Arial", sans-serif;
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 16px;
-  text-align: center;
-  margin: 0 0 20px 20px;
-  width: 280px;
-  color: #444444;
-}
-
-.product-more__button {
-  display: block;
-  text-decoration: none;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: center;
-  color: #444444;
-  padding: 10px 0 10px 0;
-  background: #f2f2f2;
-  width: 280px;
-  margin: 0 auto;
-  text-transform: uppercase;
-}
-
-.product-more__button:hover {
-  background-color: #ebebeb;
-}
-
-.product-more__button:active {
-  background-color: #ebebeb;
-  color: rgba(68, 68, 68, 1);
-}
-
 @media (min-width: @tabletop-width) {
   .product {
     position: relative;
@@ -217,7 +133,7 @@
     content: "";
     background-color: #ebebeb;
     width: 324px;
-    height: 1px;
+    min-height: calc(100% - 41px);
     left: 0;
     top: 82px;
   }
@@ -325,60 +241,6 @@
     padding: 10px 0 10px 0;
     background: #68b738;
     width: 250px;
-    margin: 0 auto;
-    text-transform: uppercase;
-  }
-
-  .product-more {
-    width: 324px;
-  }
-
-  .product-more::after {
-    display: none;
-  }
-
-  .product-more__image {
-    left: 132px;
-    top: 132px;
-  }
-
-  .product-more__name {
-    display: flex;
-    margin: 244px auto 22px;
-    padding: 0;
-    font-family: "Oswald", "Arial", sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    text-transform: uppercase;
-    color: #222222;
-    text-align: center;
-    width: 134px;
-  }
-
-  .product-more__show {
-    font-family: "Lato", "Arial", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18px;
-    text-align: center;
-    margin: 0 auto 82px;
-    width: 170px;
-  }
-
-  .product-more__button {
-    display: block;
-    text-decoration: none;
-    font-family: "Oswald", "Arial", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    text-align: center;
-    color: #444444;
-    padding: 10px 0 10px 0;
-    background: #f2f2f2;
-    width: 250px;
-    height: 40px;
     margin: 0 auto;
     text-transform: uppercase;
   }
@@ -512,63 +374,5 @@
   .product__button:active {
     background-color: #5eaa2f;
     color: rgba(255, 255, 255, 0.3);
-  }
-
-  .product-more {
-    top: -15px;
-    width: 245px;
-  }
-
-  .product-more__image {
-    left: 92px;
-    top: 84px;
-  }
-
-  .product-more__name {
-    display: flex;
-    margin: 184px auto 26px;
-    padding: 0;
-    font-family: "Oswald", "Arial", sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    text-transform: uppercase;
-    color: #222222;
-    text-align: center;
-    width: 140px;
-  }
-
-  .product-more__show {
-    font-family: "Lato", "Arial", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 18px;
-    text-align: center;
-    margin: 0 38px 90px 38px;
-  }
-
-  .product-more__button {
-    display: block;
-    text-decoration: none;
-    font-family: "Oswald", "Arial", sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 20px;
-    text-align: center;
-    color: #444444;
-    padding: 10px 0 10px 0;
-    background: #f2f2f2;
-    width: 169px;
-    margin: 0 auto;
-    text-transform: uppercase;
-  }
-
-  .product-more__button:hover {
-    background-color: #ebebeb;
-  }
-
-  .product-more__button:active {
-    background-color: #ebebeb;
-    color: rgba(68, 68, 68, 1);
   }
 }
