@@ -13,6 +13,7 @@
   margin-right: 14px;
   color: #444444;
   max-width: 50%;
+  flex-shrink: 0;
 }
 
 .input-block__field {
@@ -37,21 +38,7 @@
   outline: 2px solid #444444;
 }
 
-.input-block__field-contacts {
-  width: 216px;
-  height: 45px;
-  border: 1px solid #e7e7e7;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18px;
-  text-transform: uppercase;
-  padding-left: 14px;
-  color: #444444;
-  min-width: 0;
-}
-
-.input-block__field-contacts:focus + svg {
+.input-block__field:focus + svg {
   stroke: #68B738;
 }
 
