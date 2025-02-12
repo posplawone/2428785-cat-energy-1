@@ -145,18 +145,34 @@
 
 @media (min-width: @desktop-width) {
   .program {
-    min-height: 542px;
-    margin-bottom: 115px;
+    position: relative;
+    margin-bottom: 82px;
+    min-height: 694px;
+  }
+
+  .program__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+    min-height: 0;
+    position: static;
+    display: grid;
+    grid-template-columns: 414px 1fr;
+  }
+
+  .program__wrapper picture {
+    grid-column: 2/3;
+    grid-row: 1/4;
+    margin: 0;
   }
 
   .program__wrapper::before {
     position: absolute;
     display: block;
     width: 50vw;
-    height: 694px;
+    height: 100%;
     z-index: -3;
     left: 50%;
-    top: -120px;
+    top: 0;
     object-fit: cover;
     background-image: url("../img/program-cat-desktop.jpg");
   }
@@ -164,21 +180,17 @@
   .program__wrapper::after {
     display: block;
     left: 50%;
-    top: -120px;
-    height: 694px;
-    width: 100vw;
+    top: 0;
+    height: 100%;
+    width: 50vw;
     z-index: -2;
   }
 
-  .program__wrapper {
-    width: 1220px;
-    margin: 0 auto;
-    min-height: 0;
-  }
-
   .program__header {
-    margin: 110px 0 0 80px;
+    margin: 80px 0 0 80px;
     width: 414px;
+    grid-column: 1/2;
+    grid-row: 1/2;
   }
 
   .program__title {
@@ -205,11 +217,14 @@
   }
 
   .program__image-package {
-    position: absolute;
+    position: static;
     width: 552px;
     height: 499px;
     right: 220px;
     top: 24px;
+    grid-column: 2/3;
+    grid-row: 1/4;
+    margin: -6px 0 0 34px;
   }
 
   .program__toggle {
@@ -219,6 +234,8 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 26px;
+    grid-column: 1/2;
+    grid-row: 2/3;
   }
 }
 
